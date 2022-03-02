@@ -27,6 +27,17 @@
             project. This allows us to work in harmony the surrounding area to create truly
             stunning projects that will stand the test of time.</p>
         </section>
+
+        <div class="overlay about-overlay"></div>
+        <section class="about-us flex">
+            <div>
+                 <h2>Small team, <br> big ideas</h2>
+                <router-link to="" class="cta-link flex">
+                        <span class="cta">About us</span>
+                        <img alt="visit-arrow" src="./../assets/icons/icon-arrow.svg" />
+                </router-link>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -43,17 +54,22 @@ export default {
 <style scoped>
     #home {
         background-image: url('./../assets/home/mobile/image-hero-paramour.jpg');
+    }
+
+    #home,
+    .about-us {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        height: 85vh; 
         width: 100%;
-        justify-content: center; 
         padding: 0 2.5rem;
         position: relative;
+        height: 85vh; 
+        justify-content: center; 
     }
 
-    #home > div {
+    #home > div,
+    .about-us > div {
         z-index: 999;
     }
 
@@ -126,4 +142,20 @@ export default {
         margin-bottom: 4rem;
     }
 
+    .about-overlay {
+        top: unset;
+    }
+
+    .about-us {
+        background-image: url('./../assets/home/mobile/image-small-team.jpg'); 
+    }
+
+    .about-us h2 {
+        color: #fff;
+        margin-bottom: 2rem;
+    }
+
+    .about-us .cta-link {
+        width: 12rem;
+    }
 </style>

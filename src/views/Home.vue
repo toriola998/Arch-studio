@@ -7,10 +7,7 @@
                 <h1>Project <br> Paramour</h1>
                 <p class="note">Project made for an art museum near Southwest London. 
                 Project Paramour is a statement of bold, modern architecture.</p>
-                <router-link to="" class="cta-link flex">
-                    <span class="cta">See Our Portfolio</span>
-                    <img alt="visit-arrow" src="./../assets/icons/icon-arrow.svg" />
-                </router-link>
+                <Button btnContent="See our portfolio"/>
             </div>
         </section>
     </header>
@@ -31,22 +28,21 @@
         <div class="overlay about-overlay"></div>
         <section class="about-us flex">
             <div>
-                 <h2>Small team, <br> big ideas</h2>
-                <router-link to="" class="cta-link flex">
-                        <span class="cta">About us</span>
-                        <img alt="visit-arrow" src="./../assets/icons/icon-arrow.svg" />
-                </router-link>
+                <h2>Small team, <br> big ideas</h2>
+                <Button btnContent="About us"/>
             </div>
         </section>
     </main>
 </template>
 
 <script>
+import Button from '../components/Button.vue'
 import Header from './../components/Header.vue'
 export default {
     name: 'Home',
     components: {
         Header,
+        Button,
     }
 }
 </script>
@@ -104,23 +100,6 @@ export default {
         font-size: .9rem;
     }
 
-    .cta-link {
-        height: 4rem;
-        width: 16rem;
-        background-color: #1B1D23;
-        justify-content: center;
-        transition: all .7s;
-    }
-
-    .cta-link:hover {
-        background-color: #979797;
-    }
-
-    .cta {
-        font-weight: 700;
-        margin-right: 1rem;
-    }
-
     .welcome {
         padding: 4rem 1.5rem;
     }
@@ -155,7 +134,4 @@ export default {
         margin-bottom: 2rem;
     }
 
-    .about-us .cta-link {
-        width: 12rem;
-    }
 </style>

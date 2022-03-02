@@ -14,6 +14,20 @@
             </div>
         </section>
     </header>
+    <main>
+        <section class="welcome">
+            <div class="line"></div>
+            <h2>Welcome to<br> Arch Studio</h2>
+            <p class="description"> We have a unique network and skillset to help bring your projects to life. Our small 
+            team of highly skilled individuals combined with our large network put us in a strong 
+            position to deliver exceptional results.</p>
+            <p class="description">Over the past 10 years, we have worked on all kinds of projects. From 
+            stations to high-rise buildings, we create spaces that inspire and delight.</p>
+            <p class="description">We work closely with our clients so that we understand the intricacies of each
+            project. This allows us to work in harmony the surrounding area to create truly
+            stunning projects that will stand the test of time.</p>
+        </section>
+    </main>
 </template>
 
 <script>
@@ -52,14 +66,22 @@ export default {
         height: 85vh;
     }
 
-    h1 {
-        font-weight: 700;
-        font-size: 2.8rem;
+    p {
+        font-size: .9rem;
+    }
+
+    h1, 
+    .note,
+    .cta-link {
         color: #fff;
     }
 
+    h1 {
+        font-size: 2.8rem;
+        line-height: 1.1;
+    }
+
     .note {
-        color: #fff;
         font-weight: 400;
         margin: 1rem 0 3rem;
         line-height: 1.6;
@@ -77,10 +99,31 @@ export default {
     .cta-link:hover {
         background-color: #979797;
     }
+
     .cta {
-        color: #fff;
         font-weight: 700;
         margin-right: 1rem;
+    }
+
+    .welcome {
+        padding: 4rem 1.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    .description {
+        color: #60636D;
+        line-height: 25px;
+        margin-top: 2rem;
+    }
+
+    .line {
+        background-color: #C8CCD8;
+        height: 1px;
+        width: 5rem;
+        margin-bottom: 4rem;
     }
 
 </style>

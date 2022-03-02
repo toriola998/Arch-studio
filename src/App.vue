@@ -30,4 +30,7 @@ export default {
         align-items: center;
     }
 
+    h1, h2, h3 {
+        font-weight: 700;
+    }
 </style>

@@ -30,6 +30,10 @@ export default {
         align-items: center;
     }
 
+    ul {
+        list-style-type: none ;
+    }
+
     h1, h2, h3 {
         font-weight: 700;
     }

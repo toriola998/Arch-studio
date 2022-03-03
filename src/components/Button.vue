@@ -15,12 +15,9 @@ export default {
 <style scoped>
     .cta-link {
         height: 4rem;
-        max-width: fit-content;
-        padding: 0 2rem;
         background-color: #1B1D23;
         justify-content: center;
         transition: all .7s;
-
     }
 
     .cta-link:hover {
@@ -30,5 +27,6 @@ export default {
     .cta {
         font-weight: 700;
         margin-right: 1rem;
+        color: #fff;
     }
 </style>

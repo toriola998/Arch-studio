@@ -1,10 +1,10 @@
 <template>
     <div class="project-container">
-        <img src="./../assets/portfolio/mobile/image-del-sol.svg" 
+        <img :src="require(`@/assets/portfolio/mobile/${filename}.svg`)"
             alt="project-photo" 
             class="project" />
         <div> 
-            <h3>Project Del Sol</h3>
+            <h3>{{ projectName }}</h3>
             <router-link to="" class="project-link">View All Projects</router-link>
         </div>
     </div>
@@ -13,7 +13,7 @@
 <script>
 export default {
     name: 'Project',
-    props: ['image', 'projectName']
+    props: ['filename', 'projectName']
 }
 </script>
 

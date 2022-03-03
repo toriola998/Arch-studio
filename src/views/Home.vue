@@ -1,13 +1,12 @@
 <template>
     <header>
         <Header />
-        <div class="overlay"></div>
         <section id="home" class="flex">
             <div>
                 <h1>Project <br> Paramour</h1>
                 <p class="note">Project made for an art museum near Southwest London. 
                 Project Paramour is a statement of bold, modern architecture.</p>
-                <Button btnContent="See our portfolio"/>
+                <Button btnContent="See our portfolio" style="width: 16rem"/>
             </div>
         </section>
     </header>
@@ -25,18 +24,21 @@
             stunning projects that will stand the test of time.</p>
         </section>
 
-        <div class="overlay about-overlay"></div>
         <section class="about-us flex">
             <div>
                 <h2>Small team, <br> big ideas</h2>
-                <Button btnContent="About us"/>
+                <Button btnContent="About us" style="width: 11rem"/>
             </div>
         </section>
 
         <section class="features">
             <h2>Features</h2>
-            <Project />
+            <Project projectName="Project del sol" filename="image-del-sol"/>
+            <Project projectName="228B Tower" filename="image-228b"/>
+            <Project projectName="Le Prototype" filename="image-prototype"/>
+            <Button btnContent="See all" style="margin-top: 1rem"/>
         </section>
+        <Footer />
     </main>
 </template>
 
@@ -44,19 +46,21 @@
 import Button from '../components/Button.vue'
 import Header from './../components/Header.vue'
 import Project from './../components/Project.vue'
+import Footer from './../components/Footer.vue'
 export default {
     name: 'Home',
     components: {
         Header,
         Button,
         Project,
+        Footer
     }
 }
 </script>
 
 <style scoped>
     #home {
-        background-image: url('./../assets/home/mobile/image-hero-paramour.jpg');
+        background-image: url('./../assets/home/mobile/image-hero-paramour.svg');
     }
 
     #home,
@@ -74,15 +78,6 @@ export default {
     #home > div,
     .about-us > div {
         z-index: 999;
-    }
-
-    .overlay  {
-        background: rgba(0, 0, 0, 0.4);
-        position: absolute;
-        top: 5.5rem;
-        z-index: 99;
-        width: 100%;
-        height: 85vh;
     }
 
     p {
@@ -128,12 +123,8 @@ export default {
         margin-bottom: 4rem;
     }
 
-    .about-overlay {
-        top: unset;
-    }
-
     .about-us {
-        background-image: url('./../assets/home/mobile/image-small-team.jpg'); 
+        background-image: url('./../assets/home/mobile/image-small-team.svg'); 
     }
 
     .about-us h2 {
@@ -142,7 +133,7 @@ export default {
     }
 
     .features {
-        padding: 4rem 1.5rem;
+        padding: 4rem 1.5rem 8rem;
     }
 
     .features h2 {

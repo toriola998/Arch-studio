@@ -54,11 +54,6 @@ export default {
         margin-bottom: 2rem;
     }
 
-    li a{
-        color: #1B1D23;
-        font-weight: 600;
-    }
-
     .footer-btn {
         width: 80%;
         margin: auto ;

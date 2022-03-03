@@ -13,6 +13,7 @@
     <main>
         <section class="welcome">
             <div class="line"></div>
+            <h2 class="large-welcome">Welcome</h2>
             <h2>Welcome to<br> Arch Studio</h2>
             <p class="description"> We have a unique network and skillset to help bring your projects to life. Our small 
             team of highly skilled individuals combined with our large network put us in a strong 
@@ -123,6 +124,10 @@ export default {
         margin-bottom: 4rem;
     }
 
+    .large-welcome {
+        display: none;
+    }
+
     .about-us {
         background-image: url('./../assets/home/mobile/image-small-team.svg'); 
     }
@@ -138,6 +143,27 @@ export default {
 
     .features h2 {
         font-size: 2.2rem;
+    }
+
+    @media screen and (min-width: 520px) {
+        header {
+            padding: 0 4rem;
+        }
+
+        .line {
+            display: none;
+        }
+
+        .large-welcome {
+            display: block;
+            color: #EEEFF4;
+            font-size: 5.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .welcome {
+        padding: 4rem;
+    }
     }
 
 </style>

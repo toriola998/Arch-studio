@@ -25,6 +25,11 @@ export default {
         text-decoration: none;
     }
 
+    li a{
+        color: #1B1D23;
+        font-weight: 600;
+    }
+
     .flex {
         display: flex;
         align-items: center;

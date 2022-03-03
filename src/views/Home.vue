@@ -32,17 +32,24 @@
                 <Button btnContent="About us"/>
             </div>
         </section>
+
+        <section class="features">
+            <h2>Features</h2>
+            <Project />
+        </section>
     </main>
 </template>
 
 <script>
 import Button from '../components/Button.vue'
 import Header from './../components/Header.vue'
+import Project from './../components/Project.vue'
 export default {
     name: 'Home',
     components: {
         Header,
         Button,
+        Project,
     }
 }
 </script>
@@ -132,6 +139,14 @@ export default {
     .about-us h2 {
         color: #fff;
         margin-bottom: 2rem;
+    }
+
+    .features {
+        padding: 4rem 1.5rem;
+    }
+
+    .features h2 {
+        font-size: 2.2rem;
     }
 
 </style>

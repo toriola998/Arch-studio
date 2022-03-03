@@ -25,19 +25,24 @@
             stunning projects that will stand the test of time.</p>
         </section>
 
-        <section class="about-us flex">
-            <div>
-                <h2>Small team, <br> big ideas</h2>
-                <Button btnContent="About us" style="width: 11rem"/>
+        <section class="about-container">
+            <div class="about-us flex">
+                <div>
+                    <h2>Small team, <br> big ideas</h2>
+                    <Button btnContent="About us" style="width: 11rem"/>
+                </div>
             </div>
         </section>
-
+       
         <section class="features">
-            <h2>Features</h2>
+            <div>
+                <h2>Featured</h2>
+                <Button btnContent="See All" class="feature-btn"/>
+            </div>
             <Project projectName="Project del sol" filename="image-del-sol"/>
             <Project projectName="228B Tower" filename="image-228b"/>
             <Project projectName="Le Prototype" filename="image-prototype"/>
-            <Button btnContent="See all" style="margin-top: 1rem"/>
+            <Button btnContent="See all" style="margin-top: 1rem" class="hide-tab"/>
         </section>
         <Footer />
     </main>
@@ -145,12 +150,18 @@ export default {
         font-size: 2.2rem;
     }
 
+    .feature-btn {
+        display: none;
+    }
+
     @media screen and (min-width: 520px) {
-        header {
+        header,
+        .about-container{
             padding: 0 4rem;
         }
 
-        .line {
+        .line,
+        .hide-tab {
             display: none;
         }
 
@@ -162,8 +173,26 @@ export default {
         }
 
         .welcome {
-        padding: 4rem;
-    }
+            padding: 4rem;
+        }
+
+        .features {
+            padding: 8rem 4rem;
+        }
+
+        .features > div,
+        .feature-btn {
+            display: flex;
+            align-items: center;
+        }
+
+        .features > div {
+            justify-content: space-between;
+        }
+
+        .feature-btn {
+            width: 10rem;
+        }
     }
 
 </style>

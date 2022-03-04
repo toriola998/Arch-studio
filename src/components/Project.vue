@@ -100,13 +100,13 @@ export default {
 }
 
 @media screen and (min-width: 1200px) {
-    .desktop-projects {
+    .project-container {
         cursor: pointer;
-        transition: all 3s;
+        transition: all 1s;
     }
 
-    .desktop-projects:hover {
-        transform: scale(1.2);
+    .project-container:hover {
+        transform: scale(0.9);
     }
 }
 </style>

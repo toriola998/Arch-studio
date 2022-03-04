@@ -68,24 +68,6 @@ export default {
     }
 
     @media screen and (min-width: 520px) {
-        .flex-tab-num {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 3rem;
-            width: 100%;
-        }
-
-        .tab-num {
-            display: block;
-            font-size: 12rem;
-            color: #fff;
-            opacity: 0.5;
-            font-weight: 700;
-        }
-
-        .project-container > div{
-            left: unset;
-        }
+        
     }
 </style>

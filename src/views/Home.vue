@@ -39,10 +39,7 @@
                 <h2>Featured</h2>
                 <Button btnContent="See All" class="feature-btn"/>
             </div>
-            <Project projectName="Project del sol" filename="image-del-sol"/>
-            <Project projectName="228B Tower" filename="image-228b"/>
-            <Project projectName="Le Prototype" filename="image-prototype"/>
-            <Button btnContent="See all" style="margin-top: 1rem" class="hide-tab"/>
+           <Button btnContent="See all" style="margin-top: 1rem" class="hide-btn-tab"/>
         </section>
         <Footer />
     </main>
@@ -51,15 +48,13 @@
 <script>
 import Button from '../components/Button.vue'
 import Header from './../components/Header.vue'
-import Project from './../components/Project.vue'
 import Footer from './../components/Footer.vue'
 export default {
     name: 'Home',
     components: {
         Header,
         Button,
-        Project,
-        Footer
+        Footer,  
     }
 }
 </script>
@@ -67,6 +62,7 @@ export default {
 <style scoped>
     #home {
         background-image: url('./../assets/home/mobile/image-hero-paramour.svg');
+        justify-content: center; 
     }
 
     #home,
@@ -78,7 +74,7 @@ export default {
         padding: 0 2.5rem;
         position: relative;
         height: 85vh; 
-        justify-content: center; 
+        
     }
 
     #home > div,
@@ -161,7 +157,7 @@ export default {
         }
 
         .line,
-        .hide-tab {
+        .hide-btn-tab {
             display: none;
         }
 
@@ -192,6 +188,13 @@ export default {
 
         .feature-btn {
             width: 10rem;
+        }
+    }
+
+    
+    @media screen and (min-width: 520px) {
+        #home {
+            background-image: url('./../assets/home/tablet/image-hero-paramour.png');
         }
     }
 

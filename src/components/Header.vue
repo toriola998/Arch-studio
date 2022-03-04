@@ -38,6 +38,10 @@ export default {
         padding: 0 1.5rem;
     }
 
+    nav {
+        display: none;
+    }
+
     @media screen and (min-width: 520px) {
         .menu {
             display: none;

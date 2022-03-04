@@ -58,4 +58,34 @@ export default {
         width: 80%;
         margin: auto ;
     }
+
+    @media screen and (min-width: 520px) {
+        .footer-btn {
+            width: 50%; 
+        } 
+    }
+
+    @media screen and (min-width: 670px) {
+        footer {
+            padding-bottom: unset;
+        }
+
+        footer,
+        footer ul {
+            display: flex;
+        }
+
+        .logo-bg {
+            position: initial;
+            bottom: 0;
+        }
+
+        .footer-btn {
+            width: 32%; 
+        } 
+        
+        footer li {
+            margin: 0 .5rem 0;
+        }
+    }
 </style>

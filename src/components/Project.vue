@@ -1,13 +1,13 @@
 <template>
     <div class="project-container">
-        <img :src="require(`@/assets/portfolio/${filename}.svg`)"
+        <img :src="require(`@/assets/portfolio/${filepath}.jpg`)"
         alt="project-photo" 
         class="project" />
 
         <div class="flex-tab-num"> 
             <div>
                  <h3>{{ projectName }}</h3>
-                <router-link to="" class="project-link">View All Projects</router-link>
+                <router-link to="" class="project-link">{{ info }}</router-link>
             </div>
             <p class="tab-num">1</p>
         </div>
@@ -17,25 +17,36 @@
 <script>
 export default {
     name: 'Project',
-    props: ['filename', 'projectName']
+    props: ['filepath', 'projectName', 'info']
 }
 </script>
 
 <style scoped>
     .project {
         width: 100%;
-        height: auto;
-        margin-top: 2rem;
+        height: auto;  
     }
 
     .project-container {
         position: relative;
+        margin-bottom: 2rem;
+    }
+
+    .project-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.4)
     }
 
     .project-container > div{
         position: absolute;
         bottom: 2.5rem;
         left: 2rem;
+        z-index: 9999;
     }
 
     h3,
@@ -57,28 +68,6 @@ export default {
     }
 
     @media screen and (min-width: 520px) {
-        .project-container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0, 0.4)
-        }
-
-        .project-container {
-            margin-bottom: 2rem;
-        }
-
-        .project {
-            margin-top: unset;
-        }
-
-        .project-container > div{
-            z-index: 9999;
-        }
-
         .flex-tab-num {
             display: flex;
             align-items: center;

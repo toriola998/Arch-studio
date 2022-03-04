@@ -13,17 +13,26 @@
             surrounding element to inform our designs.</p>
             <p class="description">Our small team of world-class professionals provides input on every project.</p>
         </section>
+        <section class="leaders-container">
+            <h2>The<br> Leaders</h2>
+            <LeaderLayout avatarName="avatar-jake" personName="Jake Richards" personRole="Chief Architect"/>
+            <LeaderLayout avatarName="avatar-thompson" personName="Thompson Smith" personRole="Head of Finance"/>
+            <LeaderLayout avatarName="avatar-jackson" personName="Jackson Rourke" personRole="Lead designer"/>
+            <LeaderLayout avatarName="avatar-maria" personName="Maria Simpson" personRole="Senior Architect"/>
+        </section>
     </main>
     <Footer />
 </template>
 
 <script>
 import Header from './../components/Header.vue'
+import LeaderLayout from './../components/LeaderLayout.vue'
 import Footer from './../components/Footer.vue'
 export default {
     name: 'About',
     components: {
         Header,
+        LeaderLayout,
         Footer
     }
 }
@@ -31,6 +40,15 @@ export default {
 
 <style scoped>
     main {
-        padding: 0 1.5rem;
+        padding: 0 1.5rem 8rem;
     }
+
+    .leaders-container{
+        padding-top: 4rem;
+    }
+
+    .leaders-container h2{
+        margin-bottom: 4rem;
+    }
+
 </style>

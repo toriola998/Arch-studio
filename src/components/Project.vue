@@ -1,8 +1,16 @@
 <template>
     <div class="project-container">
-        <img :src="require(`@/assets/portfolio/${filepath}.jpg`)"
+        <img :src="require(`@/assets/portfolio/mobile/${filename}.jpg`)"
         alt="project-photo" 
-        class="project" />
+        class="project mobile-projects" />
+
+        <img :src="require(`@/assets/portfolio/tablet/${filename}.jpg`)"
+        alt="project-photo" 
+        class="project tab-projects" />
+
+        <img :src="require(`@/assets/portfolio/desktop/${filename}.jpg`)"
+        alt="project-photo" 
+        class="project desktop-projects" />
 
         <div class="flex-tab-num"> 
             <div>
@@ -17,7 +25,7 @@
 <script>
 export default {
     name: 'Project',
-    props: ['filepath', 'projectName', 'info']
+    props: ['filename', 'projectName', 'info']
 }
 </script>
 
@@ -63,11 +71,42 @@ export default {
         font-weight: 400;
     }
 
-    .tab-num {
+    .tab-num,
+    .tab-projects,
+    .desktop-projects {
         display: none ;
     }
 
-    @media screen and (min-width: 520px) {
-        
+@media screen and (min-width: 520px) {
+    .tab-projects {
+        display: block;
     }
+    
+    .mobile-projects,
+    .desktop-projects {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .desktop-projects {
+        display: block;
+    }
+
+    .mobile-projects,
+    .tab-projects {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .desktop-projects {
+        cursor: pointer;
+        transition: all 3s;
+    }
+
+    .desktop-projects:hover {
+        transform: scale(1.2);
+    }
+}
 </style>

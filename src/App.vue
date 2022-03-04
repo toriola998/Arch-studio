@@ -42,4 +42,31 @@ export default {
     h1, h2, h3 {
         font-weight: 700;
     }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: .9rem;
+    }
+
+    .line {
+        background-color: #C8CCD8;
+        height: 1px;
+        width: 5rem;
+        margin-bottom: 4rem;
+    }
+
+    .description {
+        color: #60636D;
+        line-height: 25px;
+        margin-top: 2rem;
+    }
+
+    @media screen and (min-width: 520px) {
+        .line {
+            display: none;
+        }
+    }
 </style>

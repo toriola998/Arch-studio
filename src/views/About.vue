@@ -1,5 +1,19 @@
 <template>
     <Header/>
+    <img />
+    <main>
+        <section class="about">
+            <div class="line"></div>
+            <h2>Our<br> Heritage</h2>
+            <p class="description">Founded in 2007, we started as a trio of architects. Our complimentary skills and 
+            relentless attention to detail turned Arch into one of the most sought after
+            boutique firms in the country.</p>
+            <p class="description">Speciliazing in Urban Design allowed us to focus on creating exceptional structures
+            that live in harmony with their surroundings. We consider every detail from every
+            surrounding element to inform our designs.</p>
+            <p class="description">Our small team of world-class professionals provides input on every project.</p>
+        </section>
+    </main>
     <Footer />
 </template>
 
@@ -16,5 +30,7 @@ export default {
 </script>
 
 <style scoped>
-
-</style>>
+    main {
+        padding: 0 1.5rem;
+    }
+</style>

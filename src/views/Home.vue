@@ -82,10 +82,6 @@ export default {
         z-index: 999;
     }
 
-    p {
-        font-size: .9rem;
-    }
-
     h1, 
     .note,
     .cta-link {
@@ -106,23 +102,6 @@ export default {
 
     .welcome {
         padding: 4rem 1.5rem;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    .description {
-        color: #60636D;
-        line-height: 25px;
-        margin-top: 2rem;
-    }
-
-    .line {
-        background-color: #C8CCD8;
-        height: 1px;
-        width: 5rem;
-        margin-bottom: 4rem;
     }
 
     .large-welcome {
@@ -156,7 +135,6 @@ export default {
             padding: 0 4rem;
         }
 
-        .line,
         .hide-btn-tab {
             display: none;
         }

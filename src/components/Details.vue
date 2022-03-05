@@ -2,16 +2,15 @@
     <img src="./../assets/about/mobile/image-hero.jpg" alt="" class="details-img"/>
     <div class="white-div"></div>
     <div class="page-details">
-        <h2>Your team of professionals</h2>
-        <p class="description">Our small team of world-class professionals will work with
-        you every step of the way. Strong relationships are at the core of everything we do.
-        This extends to the relationship our projects have with their surroundings.</p>
+        <h2>{{ heading }}</h2>
+        <p class="description">{{ description }}</p>
     </div>
 </template>
 
 <script>
 export default {
-
+    name: 'Details',
+    props: ['heading', 'description']
 }
 </script>
 

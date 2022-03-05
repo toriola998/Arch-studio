@@ -64,6 +64,17 @@ export default {
         margin-top: 2rem;
     }
 
+    .project-container::after,
+    .details-img::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0, 0.4)
+    }
+
     @media screen and (min-width: 520px) {
         .line {
             display: none;

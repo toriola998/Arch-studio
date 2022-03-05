@@ -40,16 +40,6 @@ export default {
         margin-bottom: 2rem;
     }
 
-    .project-container::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0, 0.4)
-    }
-
     .project-container > div{
         position: absolute;
         bottom: 2.5rem;

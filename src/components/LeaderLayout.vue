@@ -19,6 +19,7 @@ export default {
     .the-leaders {
         margin-bottom: 2.5rem;
     }
+    
     .leader-img {
         width: 100%;
         height: auto;

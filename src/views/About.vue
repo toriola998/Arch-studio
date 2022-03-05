@@ -1,6 +1,6 @@
 <template>
     <Header/>
-    <img />
+    <Details />
     <main>
         <section class="about">
             <div class="line"></div>
@@ -26,12 +26,14 @@
 
 <script>
 import Header from './../components/Header.vue'
+import Details from './../components/Details.vue'
 import LeaderLayout from './../components/LeaderLayout.vue'
 import Footer from './../components/Footer.vue'
 export default {
     name: 'About',
     components: {
         Header,
+        Details,
         LeaderLayout,
         Footer
     }

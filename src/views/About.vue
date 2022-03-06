@@ -19,10 +19,12 @@
         </section>
         <section class="leaders-container">
             <h2>The<br> Leaders</h2>
-            <LeaderLayout avatarName="avatar-jake" personName="Jake Richards" personRole="Chief Architect"/>
-            <LeaderLayout avatarName="avatar-thompson" personName="Thompson Smith" personRole="Head of Finance"/>
-            <LeaderLayout avatarName="avatar-jackson" personName="Jackson Rourke" personRole="Lead designer"/>
-            <LeaderLayout avatarName="avatar-maria" personName="Maria Simpson" personRole="Senior Architect"/>
+            <div>
+                <LeaderLayout avatarName="avatar-jake" personName="Jake Richards" personRole="Chief Architect"/>
+                <LeaderLayout avatarName="avatar-thompson" personName="Thompson Smith" personRole="Head of Finance"/>
+                <LeaderLayout avatarName="avatar-jackson" personName="Jackson Rourke" personRole="Lead designer"/>
+                <LeaderLayout avatarName="avatar-maria" personName="Maria Simpson" personRole="Senior Architect"/>
+            </div>
         </section>
     </main>
     <Footer />
@@ -55,6 +57,25 @@ export default {
 
     .leaders-container h2{
         margin-bottom: 4rem;
+    }
+
+    @media screen and (min-width: 520px) {
+        main {
+            padding: 0 4rem 8rem;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .about {
+            padding-top: 4rem;
+        }
+        
+        .leaders-container >div {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(2,1fr);
+            gap: 30px;
+        }
     }
 
 </style>

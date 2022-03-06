@@ -80,4 +80,14 @@ export default {
             display: none;
         }
     }
+
+    @media screen and (min-width: 700px) {
+    .large-welcome,
+    .large-heading {
+            display: block;
+            color: #EEEFF4;
+            font-size: 5.2rem;
+            margin-bottom: 1rem;
+        }
+    }
 </style>

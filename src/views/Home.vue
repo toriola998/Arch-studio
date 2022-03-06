@@ -139,13 +139,6 @@ export default {
             display: none;
         }
 
-        .large-welcome {
-            display: block;
-            color: #EEEFF4;
-            font-size: 5.2rem;
-            margin-bottom: 1rem;
-        }
-
         .welcome {
             padding: 4rem;
         }

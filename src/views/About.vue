@@ -7,16 +7,19 @@
         />
     <main>
         <section class="about">
-            <div class="line"></div>
-            <h2>Our<br> Heritage</h2>
-            <p class="description">Founded in 2007, we started as a trio of architects. Our complimentary skills and 
-            relentless attention to detail turned Arch into one of the most sought after
-            boutique firms in the country.</p>
-            <p class="description">Speciliazing in Urban Design allowed us to focus on creating exceptional structures
-            that live in harmony with their surroundings. We consider every detail from every
-            surrounding element to inform our designs.</p>
-            <p class="description">Our small team of world-class professionals provides input on every project.</p>
-        </section>
+            <div>
+                <div class="line"></div>
+                <h2>Our<br> Heritage</h2>
+                <p class="description">Founded in 2007, we started as a trio of architects. Our complimentary skills and 
+                relentless attention to detail turned Arch into one of the most sought after
+                boutique firms in the country.</p>
+                <p class="description">Speciliazing in Urban Design allowed us to focus on creating exceptional structures
+                that live in harmony with their surroundings. We consider every detail from every
+                surrounding element to inform our designs.</p>
+                <p class="description">Our small team of world-class professionals provides input on every project.</p>
+            </div>
+            <img src="./../assets/about/desktop/image-heritage.jpg" alt="" class="img-heritage"/>
+            </section>
         <section class="leaders-container">
             <h2>The<br> Leaders</h2>
             <div>
@@ -56,7 +59,11 @@ export default {
     }
 
     .leaders-container h2{
-        margin-bottom: 4rem;
+        margin: 0 0 4rem 0;
+    }
+
+    .img-heritage {
+        display: none;
     }
 
     @media screen and (min-width: 520px) {
@@ -69,8 +76,8 @@ export default {
         .about {
             padding-top: 4rem;
         }
-        
-        .leaders-container >div {
+
+        .leaders-container > div {
             display: grid;
             justify-content: center;
             grid-template-columns: repeat(2,1fr);
@@ -78,4 +85,26 @@ export default {
         }
     }
 
+    @media screen and (min-width: 1000px) {
+        .about,
+        .leaders-container {
+            display: flex;
+            padding-top: 8rem;
+        }
+
+        .about > div {
+            width: 50%;
+            margin-right: 3rem ;
+        }
+
+        .img-heritage {
+            display: block;
+            height: auto;
+            width: 45%;
+        }
+
+        .leaders-container h2{
+            margin: 0 6rem 4rem 0;
+        }
+    }
 </style>

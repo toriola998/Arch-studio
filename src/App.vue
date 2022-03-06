@@ -75,19 +75,19 @@ export default {
         background-color: rgba(0,0,0, 0.4)
     }
 
-    @media screen and (min-width: 520px) {
-        .line {
-            display: none;
-        }
-    }
-
     @media screen and (min-width: 700px) {
     .large-welcome,
     .large-heading {
-            display: block;
-            color: #EEEFF4;
-            font-size: 5.2rem;
-            margin-bottom: 1rem;
+        display: block;
+        color: #EEEFF4;
+        font-size: 5.2rem;
+        margin-bottom: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        h2 {
+            font-size: 3rem;
         }
     }
 </style>

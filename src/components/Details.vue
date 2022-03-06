@@ -82,7 +82,7 @@ export default {
             padding: 0 3rem;
             position: absolute;
             background-color: #fff;
-            top: 18rem;
+            top: 23rem;
             height: 28rem;
             width: 70%;
             right: 0;

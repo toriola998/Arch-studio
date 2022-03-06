@@ -88,8 +88,17 @@ export default {
     @media screen and (min-width: 1000px) {
         .about,
         .leaders-container {
-            display: flex;
             padding-top: 8rem;
+        }
+
+        .about {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .leaders-container {
+            display: grid;
+            grid-template-columns: auto auto;
         }
 
         .about > div {
@@ -105,6 +114,20 @@ export default {
 
         .leaders-container h2{
             margin: 0 6rem 4rem 0;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        main {
+            padding: 0 8rem 8rem;
+        }
+
+        .about > div {
+            width: 45%; 
+        }
+
+        .img-heritage {
+            width: 45%;
         }
     }
 </style>

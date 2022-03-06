@@ -8,7 +8,7 @@
         </div>
         <div class="flex">
             <p><strong>View on Map</strong></p>
-            <img src="./../assets/icons/icon-arrow.svg" alt="go-to-arrow"/>
+            <img src="./../assets/icons/icon-arrow1.svg" alt="go-to-arrow"/>
         </div>
     </div>
 </template>

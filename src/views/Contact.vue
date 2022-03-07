@@ -11,8 +11,10 @@
         </div>
     </section>
 
-    <section>
-        <img src="./../assets/contact/mobile/image-map.png" alt="map-to-our office" class="map"/>
+    <section class="office-map">
+        <img src="./../assets/contact/mobile/image-map.png" alt="map-to-our office" class="map mobile-map"/>
+        <img src="./../assets/contact/tablet/image-map.png" alt="map-to-our office" class="map tablet-map"/>
+        <img src="./../assets/contact/desktop/image-map.png" alt="map-to-our office" class="map desktop-map"/>
     </section>
 
     <section class="contact-form">
@@ -95,6 +97,11 @@ export default {
         justify-content: center;
     }
 
+    .tablet-map,
+    .desktop-map {
+        display: none;
+    }
+
     @media screen and (min-width: 520px) {
         .contact {
             padding: 0 4rem 4rem;
@@ -102,6 +109,10 @@ export default {
 
         .contact-form {
             padding: 4rem 4rem 7rem;
+        }
+
+        .office-map {
+            padding: 0 4rem;
         }
 
     } 
@@ -114,6 +125,15 @@ export default {
         .contact-form h2 {
             margin: 2rem 3rem 0 0;
         }
+
+        .tablet-map {
+            display: none;
+        }
+
+        .mobile-map,
+        .desktop-map {
+            display: none;
+        }
     }
 
     @media screen and (min-width: 1000px) {
@@ -121,16 +141,30 @@ export default {
             display: grid;
             grid-template-columns: auto auto auto;
         }
+
+        .desktop-map {
+            display: block;
+        }
+
+        .tablet-map,
+        .mobile-map {
+            display: none;
+        }
     }
 
     
     @media screen and (min-width: 1200px) {
          .contact {
-            padding: 0 8rem 4rem;
+            padding: 0 10rem 4rem;
         }
 
         .contact-form {
-            padding: 4rem 8rem 7rem;
+            padding: 4rem 10rem 7rem;
         }
+
+        .office-map {
+            padding: 0 10rem;
+        }
+
     }
 </style>

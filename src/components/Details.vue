@@ -99,7 +99,7 @@ export default {
             display: none;
         }
 
-         .details-container {
+        .details-container {
             padding: 0 4rem;
         }
 
@@ -145,6 +145,24 @@ export default {
         .large-heading {
             left: -3rem;
             font-size: 7.5rem;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .details-container {
+            padding: 0 10rem;
+        }
+
+        .page-details {
+            padding: 0 5rem;
+            top: 13rem;
+            height: 31rem;
+            width: 51%;
+            right: 63px;
+        }
+
+        .large-heading {
+            font-size: 9rem;
         }
     }
 </style>

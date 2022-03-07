@@ -1,12 +1,12 @@
 <template>
     <header>
-        <Header />
+        <TheHeader />
         <section id="home" class="flex">
             <div>
                 <h1>Project <br> Paramour</h1>
                 <p class="note">Project made for an art museum near Southwest London. 
                 Project Paramour is a statement of bold, modern architecture.</p>
-                <Button btnContent="See our portfolio" style="width: 16rem"/>
+                <CallToActionButton btnContent="See our portfolio" style="width: 16rem"/>
             </div>
         </section>
     </header>
@@ -29,7 +29,7 @@
             <div class="about-us flex">
                 <div>
                     <h2>Small team, <br> big ideas</h2>
-                    <Button btnContent="About us" style="width: 11rem"/>
+                    <CallToActionButton btnContent="About us" style="width: 11rem"/>
                 </div>
             </div>
         </section>
@@ -37,24 +37,24 @@
         <section class="features">
             <div>
                 <h2>Featured</h2>
-                <Button btnContent="See All" class="feature-btn"/>
+                <CallToActionButton btnContent="See All" class="feature-btn"/>
             </div>
-           <Button btnContent="See all" style="margin-top: 1rem" class="hide-btn-tab"/>
+           <CallToActionButton btnContent="See all" style="margin-top: 1rem" class="hide-btn-tab"/>
         </section>
-        <Footer />
+        <TheFooter />
     </main>
 </template>
 
 <script>
-import Button from '../components/Button.vue'
-import Header from './../components/Header.vue'
-import Footer from './../components/Footer.vue'
+import CallToActionButton from '../components/CallToActionButton.vue'
+import TheHeader from '../components/TheHeader.vue'
+import TheFooter from '../components/TheFooter.vue'
 export default {
     name: 'Home',
     components: {
-        Header,
-        Button,
-        Footer,  
+        TheHeader,
+        CallToActionButton,
+        TheFooter,  
     }
 }
 </script>

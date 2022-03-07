@@ -1,32 +1,32 @@
 <template>
-    <Header />
+    <TheHeader />
     <div class="portfolio-container">
-        <Project filename="image-seraph" projectName="Seraph Station" info="September 2019"/>
-        <Project filename="image-eebox" projectName="Eebox Builing" info="August 2017"/>
-        <Project filename="image-federal" projectName="FederalII Tower" info="March 2017"/>
-        <Project filename="image-del-sol" projectName="Project del sol" info="January 2019"/>
-        <Project filename="image-prototype" projectName="Le prototype" info="October 2015"/>
-        <Project filename="image-228b" projectName="228B Tower" info="April 2015"/>
-        <Project filename="image-edelweiss" projectName="Grand Edelweiss Hotel" info="December 2013"/>
-        <Project filename="image-netcry" projectName="Netcry Tower" info="August 2012"/>
-        <Project filename="image-hypers" projectName="Hypers" info="January 2012"/>
-        <Project filename="image-sxiv" projectName="SXIV Tower" info="December 2013"/>
-        <Project filename="image-trinity" projectName="Trinity Bank Tower" info="September 2010"/>
-        <Project filename="image-paramour" projectName="Project Paramour" info="February 2008"/>
+        <ProjectLayout filename="image-seraph" projectName="Seraph Station" info="September 2019"/>
+        <ProjectLayout filename="image-eebox" projectName="Eebox Builing" info="August 2017"/>
+        <ProjectLayout filename="image-federal" projectName="FederalII Tower" info="March 2017"/>
+        <ProjectLayout filename="image-del-sol" projectName="Project del sol" info="January 2019"/>
+        <ProjectLayout filename="image-prototype" projectName="Le prototype" info="October 2015"/>
+        <ProjectLayout filename="image-228b" projectName="228B Tower" info="April 2015"/>
+        <ProjectLayout filename="image-edelweiss" projectName="Grand Edelweiss Hotel" info="December 2013"/>
+        <ProjectLayout filename="image-netcry" projectName="Netcry Tower" info="August 2012"/>
+        <ProjectLayout filename="image-hypers" projectName="Hypers" info="January 2012"/>
+        <ProjectLayout filename="image-sxiv" projectName="SXIV Tower" info="December 2013"/>
+        <ProjectLayout filename="image-trinity" projectName="Trinity Bank Tower" info="September 2010"/>
+        <ProjectLayout filename="image-paramour" projectName="Project Paramour" info="February 2008"/>
     </div>
-    <Footer />
+    <TheFooter />
 </template>
 
 <script>
-import Header from './../components/Header.vue'
-import Project from './../components/Project.vue'
-import Footer from './../components/Footer.vue'
+import TheHeader from '../components/TheHeader.vue'
+import ProjectLayout from '../components/ProjectLayout.vue'
+import TheFooter from '../components/TheFooter.vue'
 export default {
     name: 'Portfolio',
     components: {
-        Header,
-        Project,
-        Footer 
+        TheHeader,
+        ProjectLayout,
+        TheFooter 
     }
 }
 </script>

@@ -1,5 +1,5 @@
 <template>
-    <Header />
+    <TheHeader />
     <Details pageFileName="contact" 
         largeHeading="Contact"
         subheading="Tell us about your project"
@@ -35,22 +35,22 @@
             </button> 
         </form>
     </section>
-    <Footer />
+    <TheFooter />
 </template>
 
 <script>
-import Header from './../components/Header.vue'
+import TheHeader from '../components/TheHeader.vue'
 import Details from './../components/Details.vue'
 import ContactInfo from './../components/ContactInfo.vue'
-import Footer from './../components/Footer.vue'
+import TheFooter from '../components/TheFooter.vue'
 
 export default {
     name: 'Contact',
     components: {
-        Header,
+        TheHeader,
         Details,
         ContactInfo,
-        Footer
+        TheFooter
     }
 }
 </script>

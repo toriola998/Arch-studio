@@ -17,15 +17,15 @@
                 </li>
             </ul>
         </div>
-        <Button btnContent="See our portfolio" class="footer-btn"/>
+        <CallToActionButton btnContent="See our portfolio" class="footer-btn"/>
      </footer>
 </template>
 
 <script>
-import Button from './Button.vue'
+import CallToActionButton from './CallToActionButton.vue'
 export default {
     components: {
-        Button
+        CallToActionButton
     }
 }
 </script>

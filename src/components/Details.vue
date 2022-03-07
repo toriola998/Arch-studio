@@ -120,4 +120,31 @@ export default {
             font-size: 6.2rem;
         }
     }
+
+    @media screen and (min-width: 1000px) {
+        .details-desktop  {
+            display: block;
+            width: 55%;
+            height: 700px;
+            object-fit: cover;
+        }
+
+        .details-mobile,
+        .details-tablet  {
+            display: none;
+        }
+
+        .page-details {
+            padding: 0 5rem;
+            top: 15rem;
+            height: 29rem;
+            width: 60%;
+            right: 0;
+        }
+
+        .large-heading {
+            left: -3rem;
+            font-size: 7.5rem;
+        }
+    }
 </style>

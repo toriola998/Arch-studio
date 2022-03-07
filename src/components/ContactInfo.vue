@@ -1,10 +1,12 @@
 <template>
     <div class="contact-info-wrap">
-        <p class="heading-p">{{ headingTitle }}</p>
-        <div class="contact-info">
-            <a href=""> {{ mail }}</a>
-            <address> {{ address }}</address>
-            <a href=""> {{ phone }}</a>
+        <div>
+            <p class="heading-p">{{ headingTitle }}</p>
+            <div class="contact-info">
+                <a href=""> {{ mail }}</a>
+                <address> {{ address }}</address>
+                <a href=""> {{ phone }}</a>
+            </div>
         </div>
         <div class="flex">
             <p><strong>View on Map</strong></p>
@@ -41,5 +43,19 @@ export default {
 
     .contact-info-wrap {
         margin-top: 3.5rem ;
+    }
+
+    @media screen and (min-width: 700px) {
+        .contact-info-wrap {
+            display: flex;
+            justify-content: space-between ;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .contact-info-wrap {
+            display: initial;
+            margin-top: unset;
+        }
     }
 </style>

@@ -2,11 +2,13 @@
     <Header />
     <section class="contact">
         <div class="line"></div>
-        <h2>Contact<br> Details</h2>
-        <ContactInfo headingTitle="Main Office" mail="Mail: archone@mail.com"
-                    address="Address: 1892  Chenoweth Drive TN" phone="Phone: 123-456-3451" />
-        <ContactInfo headingTitle="Office II" mail="Mail: archtwo@mail.com"
-                    address="Address: 3399  Wines Lane TX" phone="Phone: 832-123-4321" />
+        <div class="flex-contact">
+            <h2>Contact <br> Details</h2>
+            <ContactInfo headingTitle="Main Office" mail="Mail: archone@mail.com"
+                        address="Address: 1892  Chenoweth Drive TN" phone="Phone: 123-456-3451" />
+            <ContactInfo headingTitle="Office II" mail="Mail: archtwo@mail.com"
+                        address="Address: 3399  Wines Lane TX" phone="Phone: 832-123-4321" />
+        </div>
     </section>
 
     <section>
@@ -14,12 +16,14 @@
     </section>
 
     <section class="contact-form">
-        <h2>Connect<br> with us</h2>
+        <h2>Connect <br> with us</h2>
         <form>
             <input type="text" placeholder="Name"/>
             <input type="text" placeholder="Email" />
             <textarea type="text" placeholder="Message"></textarea>
-            <button type="submit" class="flex"><img src="./../assets/icons/icon-arrow.svg" alt=""/></button> 
+            <button type="submit" class="flex">
+                <img src="./../assets/icons/icon-arrow.svg" alt=""/>
+            </button> 
         </form>
     </section>
     <Footer />
@@ -41,9 +45,12 @@ export default {
 </script>
 
 <style scoped>
-    .contact,
-    .contact-form {
+    .contact {
         padding: 0 1.5rem 4rem;
+    }
+
+    .contact-form {
+        padding: 4rem 1.5rem 7rem;
     }
 
     .map {
@@ -54,8 +61,8 @@ export default {
     input,
     textarea,
     button {
-        outline: none;
-        border: none;
+        outline: 0;
+        border: 0;
     }
 
     input,
@@ -88,4 +95,42 @@ export default {
         justify-content: center;
     }
 
+    @media screen and (min-width: 520px) {
+        .contact {
+            padding: 0 4rem 4rem;
+        }
+
+        .contact-form {
+            padding: 4rem 4rem 7rem;
+        }
+
+    } 
+    @media screen and (min-width: 700px) {
+        .contact-form {
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+
+        .contact-form h2 {
+            margin: 2rem 3rem 0 0;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .flex-contact {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    
+    @media screen and (min-width: 1200px) {
+         .contact {
+            padding: 0 8rem 4rem;
+        }
+
+        .contact-form {
+            padding: 4rem 8rem 7rem;
+        }
+    }
 </style>

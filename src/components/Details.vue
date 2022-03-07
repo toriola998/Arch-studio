@@ -2,23 +2,23 @@
     <div class="details-container">
         <!--<div class="details-img-wrap">-->
             <!---SHOW IMAGE ONLY ON MOBILE DEVICES-->
-            <img src="./../assets/about/mobile/image-hero.jpg" 
+            <img :src="require(`./../assets/${pageFileName}/mobile/image-hero.jpg`)" 
                 alt="" class="details-img details-mobile"/>
 
             <!---SHOW IMAGE ONLY ON TABLET DEVICES-->
-            <img src="./../assets/about/tablet/image-hero.jpg" 
+            <img :src="require(`./../assets/${pageFileName}/tablet/image-hero.jpg`)" 
                 alt="" class="details-img details-tablet"/>
 
             <!---SHOW IMAGE ONLY ON DESKTOP DEVICES-->
-            <img src="./../assets/about/desktop/image-hero.jpg" 
+            <img :src="require(`./../assets/${pageFileName}/desktop/image-hero.jpg`)"
             alt="" class="details-img details-desktop"/>
         <!--</div>-->
 
         <div class="page-details">
-            <h2 class="large-heading">About</h2>
+            <h2 class="large-heading">{{ largeHeading}}</h2>
             <div class="line"></div>
             <div class="white-div"></div>
-            <h2>{{ heading }}</h2>
+            <h2>{{ subheading }}</h2>
             <p class="description">{{ description }}</p>
         </div>
     </div>
@@ -27,7 +27,7 @@
 <script>        
 export default {
     name: 'Details',
-    props: ['heading', 'description']
+    props: [ 'largeHeading','subheading', 'description', 'pageFileName']
 }
 </script>
 
@@ -78,10 +78,6 @@ export default {
 
         .page-details {
            padding: 3rem 4rem 3rem; 
-        }
-
-         .details-img-wrap {
-            padding: 0 4rem;
         }
     }
 

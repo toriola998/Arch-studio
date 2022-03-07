@@ -1,5 +1,12 @@
 <template>
     <Header />
+    <Details pageFileName="contact" 
+        largeHeading="Contact"
+        subheading="Tell us about your project"
+        description="We’d love to hear more about your project. Please, leave a message 
+        below or give us a call. We have two offices, one in Texas and one in Tennessee.
+        If you find yourself nearby, come say hello!"
+        />
     <section class="contact">
         <div class="line"></div>
         <div class="flex-contact">
@@ -33,6 +40,7 @@
 
 <script>
 import Header from './../components/Header.vue'
+import Details from './../components/Details.vue'
 import ContactInfo from './../components/ContactInfo.vue'
 import Footer from './../components/Footer.vue'
 
@@ -40,6 +48,7 @@ export default {
     name: 'Contact',
     components: {
         Header,
+        Details,
         ContactInfo,
         Footer
     }

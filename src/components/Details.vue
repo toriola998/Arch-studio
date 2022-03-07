@@ -1,6 +1,6 @@
 <template>
     <div class="details-container">
-        <div class="details-img-wrap">
+        <!--<div class="details-img-wrap">-->
             <!---SHOW IMAGE ONLY ON MOBILE DEVICES-->
             <img src="./../assets/about/mobile/image-hero.jpg" 
                 alt="" class="details-img details-mobile"/>
@@ -12,19 +12,19 @@
             <!---SHOW IMAGE ONLY ON DESKTOP DEVICES-->
             <img src="./../assets/about/desktop/image-hero.jpg" 
             alt="" class="details-img details-desktop"/>
-        </div>
+        <!--</div>-->
 
         <div class="page-details">
             <h2 class="large-heading">About</h2>
             <div class="line"></div>
             <div class="white-div"></div>
-                <h2>{{ heading }}</h2>
-                <p class="description">{{ description }}</p>
-            </div>
+            <h2>{{ heading }}</h2>
+            <p class="description">{{ description }}</p>
+        </div>
     </div>
 </template>
 
-<script>
+<script>        
 export default {
     name: 'Details',
     props: ['heading', 'description']
@@ -59,22 +59,47 @@ export default {
 
     @media screen and (min-width: 520px) {
         .details-desktop,
-        .details-mobile,
         .white-div {
             display: none;
+        }
+
+        .details-mobile {
+            height: 350px;
+            object-fit: cover;
         }
 
         .details-container {
             position: relative;
         }
 
-        .line,
-        .details-tablet,
-        .large-heading {
+        .line{
             display: block;
         }
 
-        .details-img-wrap {
+        .page-details {
+           padding: 3rem 4rem 3rem; 
+        }
+
+         .details-img-wrap {
+            padding: 0 4rem;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .large-heading,
+        .details-tablet  {
+            display: block;
+        }
+
+        .details-tablet {
+            height: 700px;
+        }
+
+        .details-mobile {
+            display: none;
+        }
+
+         .details-container {
             padding: 0 4rem;
         }
 
@@ -82,9 +107,9 @@ export default {
             padding: 0 3rem;
             position: absolute;
             background-color: #fff;
-            top: 23rem;
+            top: 17rem;
             height: 28rem;
-            width: 70%;
+            width: 75%;
             right: 0;
         }
 

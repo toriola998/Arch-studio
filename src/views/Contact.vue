@@ -152,7 +152,6 @@ export default {
         }
     }
 
-    
     @media screen and (min-width: 1200px) {
          .contact {
             padding: 0 10rem 4rem;
@@ -165,6 +164,5 @@ export default {
         .office-map {
             padding: 0 10rem;
         }
-
     }
 </style>

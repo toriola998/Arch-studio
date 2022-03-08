@@ -2,22 +2,24 @@
     <footer>
         <div class="footer-inner">
             <div class="logo-bg flex">
-                <img src="./../assets/footer-logo.svg" alt="logo">
+                <router-link to="/">
+                    <img src="./../assets/footer-logo.svg" alt="logo">
+                </router-link>
             </div>
 
-            <div class="links flex">
+            <nav class="links flex">
                 <ul>
                     <li>
-                        <router-link to="">Portfolio</router-link>
+                        <router-link to="/portfolio">Portfolio</router-link>
                     </li>
                     <li>
-                        <router-link to="">About us</router-link>
+                        <router-link to="/about-us">About us</router-link>
                     </li>
                     <li>
-                        <router-link to="">Contact</router-link>
+                        <router-link to="/contact">Contact</router-link>
                     </li>
                 </ul>
-            </div>
+            </nav>
         </div>
         <CallToActionButton btnContent="See our portfolio" class="footer-btn"/>
      </footer>

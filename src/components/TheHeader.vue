@@ -1,18 +1,23 @@
 <template>
     <div class="flex nav-top">
-        <img src="./../assets/logo.svg" alt="logo" class="logo"/>
-        <img src="./../assets/icons/icon-hamburger.svg" alt="menu" class="menu"/>
+        <router-link to="/">
+            <img src="./../assets/logo.svg" alt="logo" class="logo"/>
+        </router-link>
+        <img src="./../assets/icons/icon-hamburger.svg" 
+            alt="menu" 
+            class="menu"
+            @click="showNav = !showNav"/>
 
-        <nav>
+        <nav class="nav-bar" v-if="showNav">
             <ul>
                 <li>
-                    <router-link to="">Home</router-link>
+                    <router-link to="/">Home</router-link>
                 </li>
                 <li>
-                    <router-link to="">About Us</router-link>
+                    <router-link to="/about-us">About Us</router-link>
                 </li>
                 <li>
-                    <router-link to="">Portfolio</router-link>
+                    <router-link to="/portfolio">Portfolio</router-link>
                 </li>
             </ul>
         </nav>
@@ -21,7 +26,12 @@
 
 <script>
 export default {
-
+    name: 'TheHeader',
+    data () {
+        return {
+            showNav: false,
+        }
+    },
 }
 </script>
 
@@ -38,8 +48,18 @@ export default {
         padding: 0 1.5rem;
     }
 
-    nav {
-        display: none;
+    .nav-bar {
+        background-color: #EEEFF4;
+        position: absolute;
+        right: 0;
+        width: 80%;
+        top: 5.5rem;
+        z-index: 9999999;
+        padding: 3rem 3rem 2rem 3rem;
+    }
+    
+    .nav-bar li {
+        padding-bottom: 2rem;
     }
 
     @media screen and (min-width: 520px) {
@@ -51,11 +71,11 @@ export default {
             padding: unset;
         }
 
-        nav ul {
+        .nav-bar ul {
             display: flex;
         }
 
-        nav li {
+        .nav-bar li {
             padding: 0 .7rem;
         }
     }

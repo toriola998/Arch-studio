@@ -13,11 +13,10 @@
             <img :src="require(`./../assets/${pageFileName}/desktop/image-hero.jpg`)"
             alt="" class="details-img details-desktop"/>
         <!--</div>-->
-
+        <div class="white-div"></div>
         <div class="page-details">
             <h2 class="large-heading">{{ largeHeading}}</h2>
             <div class="line"></div>
-            <div class="white-div"></div>
             <h2>{{ subheading }}</h2>
             <p class="description">{{ description }}</p>
         </div>

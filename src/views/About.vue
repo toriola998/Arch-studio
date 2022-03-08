@@ -121,7 +121,7 @@ export default {
 
     @media screen and (min-width: 1200px) {
         main {
-            padding: 0 8rem 8rem;
+            padding: 0 10rem 8rem;
         }
 
         .about > div {

@@ -92,13 +92,46 @@ export default {
 
         .footer-btn {
             width: 32%; 
-            position: relative;
+            position: absolute;
             z-index: 99999;
-            left: -4rem;
+            right: 0;
+            margin-top: 2rem;
         } 
         
         footer li {
-            margin: 0 .5rem 0;
+            margin: 0 .5rem;
+        }
+    }
+
+     @media screen and (min-width: 1000px) {
+        footer {
+            padding: 0 4rem;
+        }
+
+         .footer-btn {
+            width: 23%; 
+            z-index: 99999;
+            right: 4rem;
+        }
+
+          footer li {
+            margin: 0 1.3rem;
+        }
+
+        .links {
+            padding-left: 2.5rem ;
+        }
+     }
+
+    @media screen and (min-width: 1200px) {
+        footer {
+            padding: 0 10rem;
+        }
+
+         .footer-btn {
+            width: 18%; 
+            z-index: 99999;
+            right: 10rem;
         }
     }
 </style>

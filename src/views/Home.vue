@@ -183,6 +183,14 @@ export default {
             background-image: url('./../assets/home/tablet/image-hero-paramour.png');
         }
 
+        #home > div {
+            width: 70% ;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
         .featured-heading {
             margin-bottom: 3rem;
         }
@@ -202,8 +210,15 @@ export default {
         header {
             padding: 0 6rem;
         }
+
         #home {
             background-image: url('./../assets/home/desktop/image-hero-paramour.jpg');
+            justify-content: initial;
+            padding: 0 8rem;
+        }
+
+        h1 {
+            font-size: 3.5rem;
         }
 
         .about-us {
@@ -251,12 +266,29 @@ export default {
             padding: 4rem 6rem;
         } 
 
+        .about-us {
+            padding: 0 10rem;
+            height: 55vh;
+        }
+
         .features {
             padding: 4rem 6rem 8rem;
         }
     }
 
     @media screen and (min-width: 1200px) {
+        header {
+            padding: 0 10rem;
+        }
+
+        #home > div {
+            width: 50% ;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
         .welcome {
             padding: 6rem 10rem;
         } 
@@ -273,6 +305,10 @@ export default {
         .about-container {
             padding: 6rem 10rem;
         } 
+
+        .about-us {
+            height: 70vh;
+        }
 
         .features {
             padding: 4rem 10rem 8rem;

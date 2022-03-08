@@ -12,17 +12,20 @@
     </header>
     <main>
         <section class="welcome">
-            <div class="line"></div>
-            <h2 class="large-welcome">Welcome</h2>
-            <h2>Welcome to<br> Arch Studio</h2>
-            <p class="description"> We have a unique network and skillset to help bring your projects to life. Our small 
-            team of highly skilled individuals combined with our large network put us in a strong 
-            position to deliver exceptional results.</p>
-            <p class="description">Over the past 10 years, we have worked on all kinds of projects. From 
-            stations to high-rise buildings, we create spaces that inspire and delight.</p>
-            <p class="description">We work closely with our clients so that we understand the intricacies of each
-            project. This allows us to work in harmony the surrounding area to create truly
-            stunning projects that will stand the test of time.</p>
+            <div>
+                <div class="line"></div>
+                <h2 class="large-welcome">Welcome</h2>
+                <h2>Welcome to<br> Arch Studio</h2>
+                <p class="description"> We have a unique network and skillset to help bring your projects to life. Our small 
+                team of highly skilled individuals combined with our large network put us in a strong 
+                position to deliver exceptional results.</p>
+                <p class="description">Over the past 10 years, we have worked on all kinds of projects. From 
+                stations to high-rise buildings, we create spaces that inspire and delight.</p>
+                <p class="description">We work closely with our clients so that we understand the intricacies of each
+                project. This allows us to work in harmony the surrounding area to create truly
+                stunning projects that will stand the test of time.</p>
+            </div>
+            <img src="./../assets/home/desktop/image-welcome.jpg" alt="image-welcome" class="image-welcome"/>
         </section>
 
         <section class="about-container">
@@ -115,7 +118,8 @@ export default {
         padding: 4rem 1.5rem;
     }
 
-    .large-welcome {
+    .large-welcome,
+    .image-welcome {
         display: none;
     }
 
@@ -179,22 +183,6 @@ export default {
             background-image: url('./../assets/home/tablet/image-hero-paramour.png');
         }
 
-        .flex-tab-num {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 0 3rem;
-            width: 100%;
-        }
-
-        .tab-num {
-            display: block;
-            font-size: 12rem;
-            color: #fff;
-            opacity: 0.5;
-            font-weight: 700;
-        }
-
         .featured-heading {
             margin-bottom: 3rem;
         }
@@ -211,14 +199,83 @@ export default {
     }
 
     @media screen and (min-width: 1000px) {
+        header {
+            padding: 0 6rem;
+        }
+        #home {
+            background-image: url('./../assets/home/desktop/image-hero-paramour.jpg');
+        }
+
+        .about-us {
+            background-image: url('./../assets/home/desktop/image-small-team.jpg'); 
+        }
+
+        .large-welcome,
+        .image-welcome {
+            display: block;
+        }
+
+        .welcome {
+            display: flex;
+            justify-content: end;
+            padding: 6rem;
+        }
+
+        .welcome > div {
+            width: 50%;
+        }
+
+        .image-welcome {
+            width: 35%;
+            /*height: 550px;*/
+            object-fit: cover;
+            margin: 8rem 0 0 3rem;  
+        }
+
+        .large-welcome {
+            position: relative;
+            font-size: 9rem;
+            left: -7rem;
+            top: 2rem;
+        }
+
+        .line {
+            display: none;
+        }
+
         .project-wrapper {
             grid-template-columns: auto auto auto;
         }
+
+        .about-container {
+            padding: 4rem 6rem;
+        } 
 
         .features {
             padding: 4rem 6rem 8rem;
         }
     }
 
+    @media screen and (min-width: 1200px) {
+        .welcome {
+            padding: 6rem 10rem;
+        } 
 
+        .welcome > div {
+            width: 40%;
+        }
+        
+        .large-welcome {
+            font-size: 11rem;
+            left: -13rem;
+        }
+
+        .about-container {
+            padding: 6rem 10rem;
+        } 
+
+        .features {
+            padding: 4rem 10rem 8rem;
+        }
+    } 
 </style>

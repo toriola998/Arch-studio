@@ -1,21 +1,23 @@
 <template>
     <footer>
-        <div class="logo-bg flex">
-            <img src="./../assets/footer-logo.svg" alt="logo">
-        </div>
+        <div class="footer-inner">
+            <div class="logo-bg flex">
+                <img src="./../assets/footer-logo.svg" alt="logo">
+            </div>
 
-        <div class="links flex">
-            <ul>
-                <li>
-                    <router-link to="">Portfolio</router-link>
-                </li>
-                <li>
-                    <router-link to="">About us</router-link>
-                </li>
-                <li>
-                    <router-link to="">Contact</router-link>
-                </li>
-            </ul>
+            <div class="links flex">
+                <ul>
+                    <li>
+                        <router-link to="">Portfolio</router-link>
+                    </li>
+                    <li>
+                        <router-link to="">About us</router-link>
+                    </li>
+                    <li>
+                        <router-link to="">Contact</router-link>
+                    </li>
+                </ul>
+            </div>
         </div>
         <CallToActionButton btnContent="See our portfolio" class="footer-btn"/>
      </footer>
@@ -68,9 +70,16 @@ export default {
     @media screen and (min-width: 670px) {
         footer {
             padding-bottom: unset;
+            background-color: initial;
+        }
+
+        .footer-inner {
+            background-color: #EEEFF4;
+            width: 85%;
         }
 
         footer,
+       .footer-inner,
         footer ul {
             display: flex;
         }
@@ -78,10 +87,14 @@ export default {
         .logo-bg {
             position: initial;
             bottom: 0;
+            margin: unset;
         }
 
         .footer-btn {
             width: 32%; 
+            position: relative;
+            z-index: 99999;
+            left: -4rem;
         } 
         
         footer li {

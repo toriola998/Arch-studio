@@ -12,20 +12,20 @@
         alt="project-photo" 
         class="project desktop-projects" />
 
-        <div class="flex-tab-num"> 
+        
             <div>
                  <h3>{{ projectName }}</h3>
                 <router-link to="" class="project-link">{{ info }}</router-link>
             </div>
-            <p class="tab-num">1</p>
-        </div>
+            <p class="project-num">{{ projectNumber }}</p>
+        
     </div>
 </template>
 
 <script>
 export default {
     name: 'Project',
-    props: ['filename', 'projectName', 'info']
+    props: ['filename', 'projectName', 'info', 'projectNumber']
 }
 </script>
 
@@ -61,20 +61,32 @@ export default {
         font-weight: 400;
     }
 
-    .tab-num,
+    .tab-project,
     .tab-projects,
     .desktop-projects {
         display: none ;
     }
 
 @media screen and (min-width: 520px) {
-    .tab-projects {
+    .tab-projects,
+    .project-number {
         display: block;
     }
     
     .mobile-projects,
     .desktop-projects {
         display: none;
+    }
+
+    .project-num {
+        color: #fff;
+        opacity: 0.5;
+        font-weight: 700;
+        font-size: 8rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 9999;
     }
 }
 
@@ -87,6 +99,10 @@ export default {
     .tab-projects {
         display: none;
     }
+
+     .project-num {
+        font-size: 10rem;
+     }
 }
 
 @media screen and (min-width: 1200px) {

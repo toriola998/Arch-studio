@@ -35,9 +35,18 @@
         </section>
        
         <section class="features">
-            <div>
+            <div class="featured-heading">
                 <h2>Featured</h2>
                 <CallToActionButton btnContent="See All" class="feature-btn"/>
+            </div>
+            
+            <div class="project-wrapper">
+                <ProjectLayout filename="image-del-sol" projectName="Project del sol" 
+                        info="View All Projects" projectNumber="1"/>
+                <ProjectLayout filename="image-228b" projectName="228B Tower" 
+                        info="View All Projects" projectNumber="2"/>
+                <ProjectLayout filename="image-prototype" projectName="Le Prototype" 
+                        info="View All Projects" projectNumber="3"/>
             </div>
            <CallToActionButton btnContent="See all" style="margin-top: 1rem" class="hide-btn-tab"/>
         </section>
@@ -46,13 +55,15 @@
 </template>
 
 <script>
-import CallToActionButton from '../components/CallToActionButton.vue'
 import TheHeader from '../components/TheHeader.vue'
+import ProjectLayout from '../components/ProjectLayout.vue'
+import CallToActionButton from '../components/CallToActionButton.vue'
 import TheFooter from '../components/TheFooter.vue'
 export default {
     name: 'Home',
     components: {
         TheHeader,
+        ProjectLayout,
         CallToActionButton,
         TheFooter,  
     }
@@ -123,6 +134,7 @@ export default {
 
     .features h2 {
         font-size: 2.2rem;
+        margin-bottom: 2rem;
     }
 
     .feature-btn {
@@ -147,13 +159,13 @@ export default {
             padding: 8rem 4rem;
         }
 
-        .features > div,
+        .featured-heading,
         .feature-btn {
             display: flex;
             align-items: center;
         }
 
-        .features > div {
+        .featured-heading {
             justify-content: space-between;
         }
 
@@ -162,8 +174,7 @@ export default {
         }
     }
 
-    
-    @media screen and (min-width: 520px) {
+    @media screen and (min-width: 700px) {
         #home {
             background-image: url('./../assets/home/tablet/image-hero-paramour.png');
         }
@@ -184,9 +195,30 @@ export default {
             font-weight: 700;
         }
 
-        .project-container > div{
-            left: unset;
+        .featured-heading {
+            margin-bottom: 3rem;
+        }
+
+        .features h2 {
+            margin-bottom: unset;
+        }
+
+        .project-wrapper { 
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 20px;
         }
     }
+
+    @media screen and (min-width: 1000px) {
+        .project-wrapper {
+            grid-template-columns: auto auto auto;
+        }
+
+        .features {
+            padding: 4rem 6rem 8rem;
+        }
+    }
+
 
 </style>

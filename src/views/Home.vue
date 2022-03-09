@@ -1,12 +1,14 @@
 <template>
     <header>
         <TheHeader />
-        <section id="home" class="flex">
-            <div>
-                <h1>Project <br> Paramour</h1>
-                <p class="note">Project made for an art museum near Southwest London. 
-                Project Paramour is a statement of bold, modern architecture.</p>
-                <CallToActionButton btnContent="See our portfolio" style="width: 16rem"/>
+        <section class="header">
+            <div id="home" class="flex">
+                <div>
+                    <h1>Project <br> Paramour</h1>
+                    <p class="note">Project made for an art museum near Southwest London. 
+                    Project Paramour is a statement of bold, modern architecture.</p>
+                    <CallToActionButton btnContent="See our portfolio" style="width: 16rem"/>
+                </div>
             </div>
         </section>
     </header>
@@ -146,7 +148,7 @@ export default {
     }
 
     @media screen and (min-width: 520px) {
-        header,
+        .header,
         .about-container{
             padding: 0 4rem;
         }
@@ -207,7 +209,7 @@ export default {
     }
 
     @media screen and (min-width: 1000px) {
-        header {
+        .header {
             padding: 0 6rem;
         }
 
@@ -277,7 +279,7 @@ export default {
     }
 
     @media screen and (min-width: 1200px) {
-        header {
+        .header {
             padding: 0 10rem;
         }
 

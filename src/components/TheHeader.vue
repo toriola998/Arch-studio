@@ -51,7 +51,7 @@ export default {
     }
 
     .nav-top{
-        height: 6.5rem;
+        height: 6rem;
         justify-content: space-between;
         padding: 0 1.5rem;
     }
@@ -107,7 +107,7 @@ export default {
             background-color: initial;
             width: initial;
             top: 0.5rem;
-            right: 7rem;
+            right: 5rem;
         }
 
         .nav-bar ul {
@@ -124,13 +124,17 @@ export default {
             height: 10rem;
             right: 20rem;
         }
+
+        .nav-bar li a:hover {
+            color: #979797;
+        }
     }
 
     @media screen and (min-width: 1200px) {
         .nav-bar {
             right: 35rem;
         }
-        
+
         .nav-top {
             padding: 0 10rem;
         }

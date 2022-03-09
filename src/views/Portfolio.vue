@@ -38,23 +38,30 @@ export default {
 
 @media screen and (min-width: 520px) {
     .portfolio-container {
-        padding: 3rem 4rem 6rem;
+        padding: 0rem 4rem 6rem;
     }
 }
 
 @media screen and (min-width: 700px) {
     .portfolio-container {
-        padding: 3rem 6rem 6rem;
+        padding: 0rem 4rem 6rem;
         display: grid;
         grid-template-columns: auto auto;
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .portfolio-container {
+        padding: 0rem 6rem 6rem;
+        grid-template-columns: auto auto auto;
         gap: 20px;
     }
 }
 
 @media screen and (min-width: 1200px) {
     .portfolio-container {
-        padding: 3rem 8rem 6rem;
-        grid-template-columns: auto auto auto;
+        padding: 0rem 10rem 6rem;
     } 
     
 }

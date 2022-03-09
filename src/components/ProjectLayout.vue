@@ -15,7 +15,7 @@
         
             <div>
                  <h3>{{ projectName }}</h3>
-                <router-link to="" class="project-link">{{ info }}</router-link>
+                <router-link to="/portfolio" class="project-link">{{ info }}</router-link>
             </div>
             <p class="project-num">{{ projectNumber }}</p>
         

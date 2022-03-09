@@ -103,11 +103,15 @@ export default {
         footer li {
             margin: 0 .5rem;
         }
+
+        .links {
+            padding-left: 2rem;
+        }
     }
 
      @media screen and (min-width: 1000px) {
         footer {
-            padding: 0 4rem;
+            padding: 0 6rem;
         }
 
          .footer-btn {
@@ -116,8 +120,12 @@ export default {
             right: 4rem;
         }
 
-          footer li {
+        footer li {
             margin: 0 1.3rem;
+        }
+
+        footer li a:hover {
+            color: #979797;
         }
 
         .links {

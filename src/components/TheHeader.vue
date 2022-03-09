@@ -87,31 +87,35 @@ export default {
             padding: 0 4rem;
         }
 
-        .nav-bar {
-            width: 70%;
-        }
-    }
-
-    
-    @media screen and (min-width: 700px) {
         .menu {
             display: none;
-        }
-
-        .nav-top {
-            height: 8rem;
         }
 
         .nav-bar {
             display: block !important;
             background-color: initial;
             width: initial;
-            top: 0.5rem;
-            right: 5rem;
+            top: -0.4rem;
+            right: 0rem;
         }
 
         .nav-bar ul {
             display: flex;
+        }
+        
+        .nav-bar li {
+            padding: 0 1rem;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .nav-top {
+            height: 8rem;
+        }
+
+        .nav-bar {
+            top: 0.5rem;
+            right: 4rem;
         }
 
         .nav-bar li {

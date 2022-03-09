@@ -89,7 +89,7 @@ export default {
         width: 100%;
         padding: 0 2.5rem;
         position: relative;
-        height: 85vh; 
+        height: 600px; 
         
     }
 
@@ -173,6 +173,11 @@ export default {
 
         .featured-heading {
             justify-content: space-between;
+            margin-bottom: 3rem;
+        }
+
+        .features h2 {
+            margin-bottom: unset;
         }
 
         .feature-btn {
@@ -183,6 +188,12 @@ export default {
     @media screen and (min-width: 700px) {
         #home {
             background-image: url('./../assets/home/tablet/image-hero-paramour.png');
+            height: 700px;
+        }
+
+        .about-us {
+            background-image: url('./../assets/home/tablet/image-small-team.png');
+            height: 500px;
         }
 
         #home > div {
@@ -191,14 +202,6 @@ export default {
 
         h1 {
             font-size: 3rem;
-        }
-
-        .featured-heading {
-            margin-bottom: 3rem;
-        }
-
-        .features h2 {
-            margin-bottom: unset;
         }
 
         .project-wrapper { 
@@ -217,6 +220,7 @@ export default {
             background-image: url('./../assets/home/desktop/image-hero-paramour.jpg');
             justify-content: initial;
             padding: 0 8rem;
+            height: 600px;
         }
 
         h1 {
@@ -270,7 +274,6 @@ export default {
 
         .about-us {
             padding: 0 10rem;
-            height: 55vh;
         }
 
         .features {
@@ -307,10 +310,6 @@ export default {
         .about-container {
             padding: 6rem 10rem;
         } 
-
-        .about-us {
-            height: 70vh;
-        }
 
         .features {
             padding: 4rem 10rem 8rem;

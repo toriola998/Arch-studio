@@ -76,6 +76,7 @@ export default {
     }
 
     .project-num {
+        display: block;
         color: #fff;
         opacity: 0.5;
         font-weight: 700;

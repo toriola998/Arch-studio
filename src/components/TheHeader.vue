@@ -3,11 +3,19 @@
         <router-link to="/">
             <img src="./../assets/logo.svg" alt="logo" class="logo"/>
         </router-link>
-        <img src="./../assets/icons/icon-hamburger.svg" 
-            alt="menu" 
-            class="menu"
+
+        <img src="./../assets/icons/icon-close.svg" 
+            alt="close-icon" 
+            v-if="showNav"
             @click="showNav = !showNav"/>
 
+        <img src="./../assets/icons/icon-hamburger.svg" 
+            alt="hamburger-menu" 
+            class="menu"
+            v-if="!showNav"
+            @click="showNav = !showNav"/>
+
+        <div class="overlay" v-if="showNav"></div>
         <nav class="nav-bar" v-if="showNav">
             <ul>
                 <li>
@@ -60,6 +68,18 @@ export default {
     
     .nav-bar li {
         padding-bottom: 2rem;
+    }
+
+    .overlay  {
+        background: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 5.5rem;
+        z-index: 9999999;
+        min-height: 100%;
+        width: 100%;
+        left: 0;
+        right: 0;
+        bottom: 0;
     }
 
     @media screen and (min-width: 520px) {

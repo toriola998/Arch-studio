@@ -7,6 +7,13 @@ import Contact from './../views/Contact.vue'
 
 const router = createRouter({
     history:  createWebHistory(),
+    scrollBehavior() {
+        // always scroll to top
+        return { 
+            top: 0,
+            //behavior: 'smooth', 
+        }
+    },
     routes: [
     {
         path: '/',

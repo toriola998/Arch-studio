@@ -120,6 +120,10 @@ export default {
     }
 
     @media screen and (min-width: 1000px) {
+        .nav-top {
+            padding: 0 6rem;
+        }
+
         .nav-bar {
             height: 10rem;
             right: 20rem;

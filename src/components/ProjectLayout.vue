@@ -58,7 +58,6 @@ export default {
         font-weight: 400;
     }
 
-    .tab-project,
     .tab-projects,
     .project-num,
     .desktop-projects {

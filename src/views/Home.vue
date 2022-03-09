@@ -7,7 +7,7 @@
                     <h1>Project <br> Paramour</h1>
                     <p class="note">Project made for an art museum near Southwest London. 
                     Project Paramour is a statement of bold, modern architecture.</p>
-                    <CallToActionButton btnContent="See our portfolio" style="width: 16rem"/>
+                    <CtaButton btnContent="See our portfolio" style="width: 16rem"/>
                 </div>
             </div>
         </section>
@@ -34,7 +34,7 @@
             <div class="about-us flex">
                 <div>
                     <h2>Small team, <br> big ideas</h2>
-                    <CallToActionButton btnContent="About us" style="width: 11rem"/>
+                    <CtaButton btnContent="About us" style="width: 11rem"/>
                 </div>
             </div>
         </section>
@@ -42,7 +42,7 @@
         <section class="features">
             <div class="featured-heading">
                 <h2>Featured</h2>
-                <CallToActionButton btnContent="See All" class="feature-btn"/>
+                <CtaButton btnContent="See All" class="feature-btn"/>
             </div>
             
             <div class="project-wrapper">
@@ -53,7 +53,7 @@
                 <ProjectLayout filename="image-prototype" projectName="Le Prototype" 
                         info="View All Projects" projectNumber="3"/>
             </div>
-           <CallToActionButton btnContent="See all" style="margin-top: 1rem" class="hide-btn-tab"/>
+           <CtaButton btnContent="See all" style="margin-top: 1rem" class="hide-btn-tab"/>
         </section>
         <TheFooter />
     </main>
@@ -62,14 +62,14 @@
 <script>
 import TheHeader from '../components/TheHeader.vue'
 import ProjectLayout from '../components/ProjectLayout.vue'
-import CallToActionButton from '../components/CallToActionButton.vue'
+import CtaButton from '../components/CtaButton.vue'
 import TheFooter from '../components/TheFooter.vue'
 export default {
     name: 'Home',
     components: {
         TheHeader,
         ProjectLayout,
-        CallToActionButton,
+        CtaButton,
         TheFooter,  
     }
 }

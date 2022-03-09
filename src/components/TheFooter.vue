@@ -21,15 +21,15 @@
                 </ul>
             </nav>
         </div>
-        <CallToActionButton btnContent="See our portfolio" class="footer-btn"/>
+        <CtaButton to="/portfolio" btnContent="See our portfolio" class="footer-btn"/>
      </footer>
 </template>
 
 <script>
-import CallToActionButton from './CallToActionButton.vue'
+import CtaButton from './CtaButton.vue'
 export default {
     components: {
-        CallToActionButton
+        CtaButton
     }
 }
 </script>

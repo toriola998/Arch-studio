@@ -8,7 +8,7 @@
 <script>
 export default {
     name: 'Button',
-    props: ['routeLink','btnContent']
+    props: ['btnContent']
 }
 </script>
 

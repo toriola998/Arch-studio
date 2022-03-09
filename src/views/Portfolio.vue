@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .portfolio-container{
-    padding: 3rem 1.5rem 0;
+    padding: 3rem 1.5rem 5rem;
 }
 
 @media screen and (min-width: 520px) {

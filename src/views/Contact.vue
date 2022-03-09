@@ -31,7 +31,7 @@
             <input type="text" placeholder="Email" />
             <textarea type="text" placeholder="Message"></textarea>
             <button type="submit" class="flex">
-                <img src="./../assets/icons/icon-arrow.svg" alt=""/>
+                <img src="./../assets/icons/icon-arrow-white.svg" alt="visit-arrow" style="height: 2rem"/>
             </button> 
         </form>
     </section>
@@ -110,7 +110,6 @@ export default {
     .desktop-map {
         display: none;
     }
-
     @media screen and (min-width: 520px) {
         .contact {
             padding: 0 4rem 4rem;

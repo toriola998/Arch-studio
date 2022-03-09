@@ -10,15 +10,12 @@
 
         <img :src="require(`@/assets/portfolio/desktop/${filename}.jpg`)"
         alt="project-photo" 
-        class="project desktop-projects" />
-
-        
-            <div>
-                 <h3>{{ projectName }}</h3>
-                <router-link to="/portfolio" class="project-link">{{ info }}</router-link>
-            </div>
-            <p class="project-num">{{ projectNumber }}</p>
-        
+        class="project desktop-projects" />    
+        <div>
+            <h3>{{ projectName }}</h3>
+            <router-link to="/portfolio" class="project-link">{{ info }}</router-link>
+        </div>
+        <p class="project-num">{{ projectNumber }}</p>
     </div>
 </template>
 
@@ -63,6 +60,7 @@ export default {
 
     .tab-project,
     .tab-projects,
+    .project-num,
     .desktop-projects {
         display: none ;
     }

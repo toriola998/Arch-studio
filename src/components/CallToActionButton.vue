@@ -1,14 +1,14 @@
 <template>
      <router-link to="" class="cta-link flex">
         <span class="cta"> {{btnContent}} </span>
-        <img alt="visit-arrow" src="./../assets/icons/icon-arrow.svg" />
+        <img alt="visit-arrow" src="./../assets/icons/icon-arrow-white.svg" class="visit-arrow"/>
     </router-link>
 </template>
 
 <script>
 export default {
     name: 'Button',
-    props: ['btnContent']
+    props: ['routeLink','btnContent']
 }
 </script>
 
@@ -28,5 +28,9 @@ export default {
         font-weight: 700;
         margin-right: 1rem;
         color: #fff;
+    }
+
+    .visit-arrow {
+        height: 2rem;
     }
 </style>

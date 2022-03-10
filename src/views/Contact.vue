@@ -3,7 +3,7 @@
     <Details pageFileName="contact" 
         largeHeading="Contact"
         subheading="Tell us about your project"
-        description="We’d love to hear more about your project. Please, leave a message 
+        description="We'd love to hear more about your project. Please, leave a message 
         below or give us a call. We have two offices, one in Texas and one in Tennessee.
         If you find yourself nearby, come say hello!"
         />
@@ -125,6 +125,10 @@ export default {
 
     } 
     @media screen and (min-width: 700px) {
+        .contact {
+            padding: 6rem 4rem 0rem 4rem;
+        }
+
         .contact-form {
             display: grid;
             grid-template-columns: auto auto;
@@ -159,8 +163,8 @@ export default {
             display: none;
         }
 
-        .contact {
-            padding: 0 6rem 4rem;
+        .contact{
+            padding: 8rem 6rem;
         }
 
         .contact-form {
@@ -178,7 +182,7 @@ export default {
 
     @media screen and (min-width: 1200px) {
         .contact {
-            padding: 0 10rem 4rem;
+            padding: 10rem;
         }
 
         .contact-form {

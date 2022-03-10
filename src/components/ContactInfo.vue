@@ -48,7 +48,10 @@ export default {
     @media screen and (min-width: 700px) {
         .contact-info-wrap {
             display: flex;
-            justify-content: space-between ;
+        }
+
+        .contact-info-wrap .flex {
+            margin-left: 6rem;
         }
     }
 
@@ -56,6 +59,10 @@ export default {
         .contact-info-wrap {
             display: initial;
             margin-top: unset;
+        }
+
+        .contact-info-wrap .flex {
+            margin-left: unset;
         }
     }
 </style>

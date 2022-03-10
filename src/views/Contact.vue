@@ -27,10 +27,23 @@
 
     <section class="contact-form">
         <h2>Connect <br> with us</h2>
-        <form>
-            <input type="text" placeholder="Name"/>
-            <input type="text" placeholder="Email" />
-            <textarea type="text" placeholder="Message"></textarea>
+        <form @submit.prevent="submitForm()">
+            <div class="flex input-wrap">
+                <input type="text" placeholder="Name" v-model="name"/>
+                <p class="error" v-if="nameError">Can't be empty</p>
+            </div>
+
+            <div class="flex input-wrap">
+                <input type="text" placeholder="Email" v-model="email"/>
+                <p class="error" v-if="emailError">Can't be empty</p> 
+                <p class="error" v-if="invalidEmailError">Invalid Email</p>
+            </div>
+            
+            <div class="flex input-wrap" style="margin-top: 3rem">
+                <textarea type="text" placeholder="Message" v-model="message"></textarea>
+                <p class="error" v-if="messageError">Can't be empty</p>
+            </div>
+            
             <button type="submit" class="flex">
                 <img src="./../assets/icons/icon-arrow-white.svg" alt="visit-arrow" style="height: 2rem"/>
             </button> 
@@ -54,6 +67,47 @@ export default {
         Details,
         ContactInfo,
         TheFooter
+    },
+    data () {
+        return {
+            name: "",
+            email: "",
+            message: "",
+            nameError: false,
+            emailError: false,
+            invalidEmailError: false,
+            messageError: false,
+        }
+    }, 
+    methods: {
+        validEmail (email) {
+            var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(email);
+        },
+
+        submitForm () {
+            if(!this.name) {
+                this.nameError = true
+            }else {
+                this.nameError = false
+            }
+            
+            if(!this.email) {
+                this.emailError = true
+            } else if (!this.validEmail(this.email)) {
+                    this.invalidEmailError = true
+                    this.emailError = false
+            } else {
+                this.emailError = false
+                this.invalidEmailError = false
+            }
+
+            if(!this.message) {
+                this.messageError = true  //show error message
+            }else {
+                this.messageError = false
+            }        
+        }
     }
 }
 </script>
@@ -79,17 +133,16 @@ export default {
         border: 0;
     }
 
-    input,
-    textarea {
-        width: 100%;
+    .input-wrap {
         margin-top: 1.5rem;
-        padding: 1rem 0 1rem 2rem;
-        border-bottom: 1px solid #1B1D23; 
-        font-family: 'Spartan', sans-serif;
+        border-bottom: 1px solid #1B1D23;  
     }
 
+    input,
     textarea {
-        margin-top: 3rem;
+        font-family: 'Spartan', sans-serif;
+        width: 100%;
+        padding: 1rem 0 1rem 2rem;
     }
 
     input::placeholder,
@@ -99,19 +152,30 @@ export default {
         color: #C8CCD8;
     }
 
+    .input-wrap:hover {
+         border-bottom: 2.4px solid #1B1D23;
+    }
+
     form button {
         background-color: #1B1D23;
         height: 3.8rem;
         width: 3.8rem;
         margin-left: auto;
         position: relative;
-        top: -0.4rem;
+        top: 0;
         justify-content: center;
     }
 
     .tablet-map,
     .desktop-map {
         display: none;
+    }
+
+    .error {
+        color: #DF5656;
+        font-size: .7rem;
+        font-weight: 700;
+        width: 140px;
     }
     @media screen and (min-width: 520px) {
         .contact {

@@ -12,7 +12,7 @@
             <!---SHOW IMAGE ONLY ON DESKTOP DEVICES-->
             <img :src="require(`./../assets/${pageFileName}/desktop/image-hero.jpg`)"
             alt="" class="details-img details-desktop"/>
-        <!--</div>-->
+        <!--</div>--> 
         <div class="white-div"></div>
         <div class="page-details">
             <h2 class="large-heading">{{ largeHeading}}</h2>

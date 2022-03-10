@@ -1,4 +1,5 @@
 <template>
+    <VerticalTitle pageTitle="PORTFOLIO" />
     <TheHeader />
     <div class="portfolio-container">
         <ProjectLayout filename="image-seraph" projectName="Seraph Station" info="September 2019"/>
@@ -18,12 +19,14 @@
 </template>
 
 <script>
+import VerticalTitle from '../components/VerticalTitle.vue'
 import TheHeader from '../components/TheHeader.vue'
 import ProjectLayout from '../components/ProjectLayout.vue'
 import TheFooter from '../components/TheFooter.vue'
 export default {
     name: 'Portfolio',
     components: {
+        VerticalTitle,
         TheHeader,
         ProjectLayout,
         TheFooter 

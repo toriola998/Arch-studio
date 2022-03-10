@@ -1,5 +1,5 @@
-<template>
-<VerticalTitle />
+<template> 
+    <VerticalTitle pageTitle="HOME"/>
     <header>
         <TheHeader />
         <section class="header">

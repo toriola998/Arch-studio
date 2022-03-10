@@ -1,4 +1,5 @@
 <template>
+    <VerticalTitle pageTitle="CONTACT" />
     <TheHeader />
     <Details pageFileName="contact" 
         largeHeading="Contact"
@@ -39,6 +40,7 @@
 </template>
 
 <script>
+import VerticalTitle from '../components/VerticalTitle.vue'
 import TheHeader from '../components/TheHeader.vue'
 import Details from './../components/Details.vue'
 import ContactInfo from './../components/ContactInfo.vue'
@@ -47,6 +49,7 @@ import TheFooter from '../components/TheFooter.vue'
 export default {
     name: 'Contact',
     components: {
+        VerticalTitle,
         TheHeader,
         Details,
         ContactInfo,

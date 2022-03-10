@@ -1,4 +1,5 @@
 <template>
+    <VerticalTitle pageTitle="ABOUT"/>
     <TheHeader/>
     <Details pageFileName="about" 
         largeHeading="About"
@@ -36,6 +37,7 @@
 </template>
 
 <script>
+import VerticalTitle from '../components/VerticalTitle.vue'
 import TheHeader from '../components/TheHeader.vue'
 import Details from './../components/Details.vue'
 import LeaderLayout from './../components/LeaderLayout.vue'
@@ -43,6 +45,7 @@ import TheFooter from '../components/TheFooter.vue'
 export default {
     name: 'About',
     components: {
+        VerticalTitle,
         TheHeader,
         Details,
         LeaderLayout,

@@ -1,13 +1,14 @@
 <template>
     <div class="vertical-wrap">
         <div class="vertical-line"></div>
-        <p class="page-title"> HOME</p>
+        <p class="page-title">  {{ pageTitle }} </p>
     </div>
 </template>
 
 <script>
 export default {
     name: 'VerticalTitle',
+    props: [ 'pageTitle' ]
 }
 </script>
 

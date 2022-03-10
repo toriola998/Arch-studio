@@ -117,7 +117,7 @@ export default {
          .footer-btn {
             width: 23%; 
             z-index: 99999;
-            right: 4rem;
+            right: 6rem;
         }
 
         footer li {

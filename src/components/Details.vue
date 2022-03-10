@@ -57,8 +57,7 @@ export default {
     }
 
     @media screen and (min-width: 520px) {
-        .details-desktop,
-        .white-div {
+        .details-desktop {
             display: none;
         }
 
@@ -90,7 +89,8 @@ export default {
             height: 700px;
         }
 
-        .details-mobile {
+        .details-mobile,
+        .white-div {
             display: none;
         }
 
@@ -122,6 +122,10 @@ export default {
             width: 55%;
             height: 700px;
             object-fit: cover;
+        }
+
+        .details-container {
+            padding: 0 6rem;
         }
 
         .details-mobile,

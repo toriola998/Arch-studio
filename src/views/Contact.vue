@@ -158,10 +158,26 @@ export default {
         .mobile-map {
             display: none;
         }
+
+        .contact {
+            padding: 0 6rem 4rem;
+        }
+
+        .contact-form {
+            padding: 4rem 6rem 7rem;
+        }
+
+        .office-map {
+            padding: 0 6rem;
+        }
+
+        .large-heading {
+            left: -10rem !important;
+        }
     }
 
     @media screen and (min-width: 1200px) {
-         .contact {
+        .contact {
             padding: 0 10rem 4rem;
         }
 

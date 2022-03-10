@@ -93,6 +93,10 @@ export default {
             padding-top: 8rem;
         }
 
+        main {
+            padding: 0 6rem 8rem;
+        }
+
         .about {
             display: flex;
             justify-content: space-between;
@@ -120,6 +124,11 @@ export default {
     }
 
     @media screen and (min-width: 1200px) {
+         .about,
+        .leaders-container {
+            padding-top: 10rem;
+        }
+
         main {
             padding: 0 10rem 8rem;
         }

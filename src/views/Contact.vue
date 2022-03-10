@@ -86,22 +86,25 @@ export default {
         },
 
         submitForm () {
-            if(!this.name) {
-                this.nameError = true
+            /*******FORM VALIDATION FOR NAME INPUT FIELD */
+            if(!this.name) { //if email field is empty
+                this.nameError = true //show error message
             }else {
-                this.nameError = false
+                this.nameError = false //remove error message if input field isn't empty
             }
             
-            if(!this.email) {
-                this.emailError = true
-            } else if (!this.validEmail(this.email)) {
-                    this.invalidEmailError = true
-                    this.emailError = false
+            /*******FORM VALIDATION FOR EMAIL INPUT FIELD */
+            if(!this.email) {  //if email field is empty
+                this.emailError = true  //show "can't be empty"
+            } else if (!this.validEmail(this.email)) {   //if it isn,t empty but its invalid
+                    this.invalidEmailError = true  // show "invalid email"
+                    this.emailError = false   //remove cant be empty since it's not empty, just invalid
             } else {
                 this.emailError = false
                 this.invalidEmailError = false
             }
-
+            
+            /*******FORM VALIDATION FOR MESSAGE TEXTAREA */
             if(!this.message) {
                 this.messageError = true  //show error message
             }else {

@@ -7,33 +7,56 @@
 
 <script>
 export default {
-
+    name: 'VerticalTitle',
 }
 </script>
 
 <style scoped>
-    .vertical-line {
-        background-color: #C8CCD8;
-        height: 1px;
-        width: 10rem;
-        transform: rotateX(90deg);
-        -webkit-transform: rotate(90deg);
-    }
-
     .vertical-wrap {
-        position: absolute;
-        left: -3rem;
-        display: flex;
-        flex-direction: column;
+        display: none;
     }
 
-    .page-title {
-        color: #C8CCD8;
-        transform: rotateX(90deg);
-        -webkit-transform: rotate(90deg);
-        margin-top: 13rem;
-        margin-left: -0.5rem;
-        font-size: 1rem;
-        letter-spacing: 12px;
+    @media screen and (min-width: 700px) {
+        .vertical-wrap {
+            position: absolute;
+            left: -3rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .vertical-line,
+        .page-title {
+            transform: rotateX(90deg);
+            -webkit-transform: rotate(90deg);
+        }
+
+        .vertical-line {
+            background-color: #C8CCD8;
+            height: 1px;
+            width: 10rem;
+        }
+
+        .page-title {
+            color: #C8CCD8;
+            margin: 13rem 0 0 -0.5rem;
+            font-size: 1rem;
+            letter-spacing: 14px;
+        }
+    }
+
+    @media screen and (min-width: 1000px) {
+        .vertical-wrap {
+            left: -2rem;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        .vertical-wrap {
+            left: 0rem;
+        }
+
+        .page-title {
+            font-size: 1.3rem;
+        }
     }
 </style>

@@ -2,7 +2,7 @@
     <VerticalTitle pageTitle="HOME"/>
     <header>
         <TheHeader />
-        <section class="header">
+        <!--<section class="header">
             <div id="home" class="flex">
                 <div>
                     <h1>Project <br> Paramour</h1>
@@ -11,7 +11,9 @@
                     <CtaButton to="/portfolio" btnContent="See our portfolio" style="width: 16rem"/>
                 </div>
             </div>
-        </section>
+        </section>-->
+
+        <HeroCarousel class="header"/> 
     </header>
     <main>
         <section class="welcome">
@@ -61,6 +63,7 @@
 </template>
 
 <script>
+import HeroCarousel from '../components/HeroCarousel.vue'
 import TheHeader from '../components/TheHeader.vue'
 import VerticalTitle from '../components/VerticalTitle.vue'
 import ProjectLayout from '../components/ProjectLayout.vue'
@@ -70,11 +73,12 @@ import TheFooter from '../components/TheFooter.vue'
 export default {
     name: 'Home',
     components: {
+        HeroCarousel,
         TheHeader,
         VerticalTitle,
         ProjectLayout,
         CtaButton,
-        TheFooter,  
+        TheFooter, 
     }
 }
 </script>
@@ -100,6 +104,10 @@ export default {
     #home > div,
     .about-us > div {
         z-index: 999;
+    }
+
+    .header {
+        position: relative;
     }
 
     h1, 

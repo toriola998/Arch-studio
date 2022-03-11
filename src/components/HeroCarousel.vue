@@ -1,0 +1,116 @@
+<template>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">01</button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2">02</button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3">03</button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4">04</button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./../assets/home/desktop/image-hero-trinity.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div>
+                        <h1>Project <br> Paramour</h1>
+                        <p class="note">Project made for an art museum near Southwest London. 
+                        Project Paramour is a statement of bold, modern architecture.</p>
+                        <CtaButton to="/portfolio" btnContent="See our portfolio" style="width: 16rem"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./../assets/home/desktop/image-hero-paramour.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div>
+                        <h1>Seraph <br> Station</h1>
+                        <p class="note"> The Seraph Station project challenged us to design a unique 
+                            station that would transport people through time. The result is a fresh and 
+                            futuristic model inspired by space stations.
+                        </p>
+                        <CtaButton to="/portfolio" btnContent="See our portfolio" style="width: 16rem"/>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">
+                <img src="./../assets/home/desktop/image-hero-seraph.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div>
+                        <h1>Federal II <br> Tower</h1>
+                        <p class="note"> A sequel theme project for a tower originally built in the 1800s. We achieved
+                        this with a striking look of brutal minimalism with modern touches.</p>
+                        <CtaButton to="/portfolio" btnContent="See our portfolio" style="width: 16rem"/>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="./../assets/home/desktop/image-hero-federal.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <div>
+                        <h1>Trinity Bank<br> Tower</h1>
+                        <p class="note">Trinity Bank challenged us to make a concept for a 84 story building
+                        located in the middle of a city with a high earthquake frequency. For this project
+                        we used curves to blend design and stability to meet our objectives.</p>
+                        <CtaButton to="/portfolio" btnContent="See our portfolio" style="width: 16rem"/>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</template>
+
+<script>
+import CtaButton from './CtaButton.vue'
+export default {
+    components: {
+        CtaButton
+    }
+}
+</script>
+
+<style scoped>
+    .carousel-caption {
+        left: 40%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: unset;
+        color: #fff;
+        text-align: unset;
+        width: 50%;
+    }
+
+    .carousel-indicators {
+        bottom: -18px;
+        right: auto;
+        left: auto;
+        margin-left: -4.3rem;
+    }
+
+    .carousel-indicators button {
+        font-size: .9rem;
+        font-weight: 700;
+        text-indent: inherit;
+        height: 70px;
+        width: 70px;
+        margin: auto;
+        opacity: inherit;
+        outline: 0;
+        border: 0;
+    }
+
+    .carousel-indicators button:hover {
+        background-color: #EEEFF4;
+        color: #7D828F;
+    }
+
+    .carousel-indicators button.active {
+        background-color: black;
+        color: #fff;
+    }
+
+</style>

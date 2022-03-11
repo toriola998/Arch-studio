@@ -8,31 +8,29 @@
         you every step of the way. Strong relationships are at the core of everything we do.
         This extends to the relationship our projects have with their surroundings."
         />
-    <main>
-        <section class="about">
-            <div>
-                <div class="line"></div>
-                <h2>Our<br> Heritage</h2>
-                <p class="description">Founded in 2007, we started as a trio of architects. Our complimentary skills and 
-                relentless attention to detail turned Arch into one of the most sought after
-                boutique firms in the country.</p>
-                <p class="description">Speciliazing in Urban Design allowed us to focus on creating exceptional structures
-                that live in harmony with their surroundings. We consider every detail from every
-                surrounding element to inform our designs.</p>
-                <p class="description">Our small team of world-class professionals provides input on every project.</p>
-            </div>
-            <img src="./../assets/about/desktop/image-heritage.jpg" alt="" class="img-heritage"/>
-            </section>
-        <section class="leaders-container">
-            <h2>The<br> Leaders</h2>
-            <div>
-                <LeaderLayout avatarName="avatar-jake" personName="Jake Richards" personRole="Chief Architect"/>
-                <LeaderLayout avatarName="avatar-thompson" personName="Thompson Smith" personRole="Head of Finance"/>
-                <LeaderLayout avatarName="avatar-jackson" personName="Jackson Rourke" personRole="Lead designer"/>
-                <LeaderLayout avatarName="avatar-maria" personName="Maria Simpson" personRole="Senior Architect"/>
-            </div>
-        </section>
-    </main>
+    <section class="about">
+        <div>
+            <div class="line"></div>
+            <h2>Our<br> Heritage</h2>
+            <p class="description">Founded in 2007, we started as a trio of architects. Our complimentary skills and 
+            relentless attention to detail turned Arch into one of the most sought after
+            boutique firms in the country.</p>
+            <p class="description">Speciliazing in Urban Design allowed us to focus on creating exceptional structures
+            that live in harmony with their surroundings. We consider every detail from every
+            surrounding element to inform our designs.</p>
+            <p class="description">Our small team of world-class professionals provides input on every project.</p>
+        </div>
+        <img src="./../assets/about/desktop/image-heritage.jpg" alt="" class="img-heritage"/>
+    </section>
+    <section class="leaders-container">
+        <h2>The<br> Leaders</h2>
+        <div>
+            <LeaderLayout avatarName="avatar-jake" personName="Jake Richards" personRole="Chief Architect"/>
+            <LeaderLayout avatarName="avatar-thompson" personName="Thompson Smith" personRole="Head of Finance"/>
+            <LeaderLayout avatarName="avatar-jackson" personName="Jackson Rourke" personRole="Lead designer"/>
+            <LeaderLayout avatarName="avatar-maria" personName="Maria Simpson" personRole="Senior Architect"/>
+        </div>
+    </section>
     <TheFooter />
 </template>
 
@@ -55,7 +53,7 @@ export default {
 </script>
 
 <style scoped>
-    main {
+    section {
         padding: 0 1.5rem 8rem;
     }
 
@@ -72,7 +70,7 @@ export default {
     }
 
     @media screen and (min-width: 520px) {
-        main {
+        section {
             padding: 0 4rem 8rem;
         }
     }
@@ -96,7 +94,7 @@ export default {
             padding-top: 8rem;
         }
 
-        main {
+        section {
             padding: 0 6rem 8rem;
         }
 
@@ -132,7 +130,7 @@ export default {
             padding-top: 10rem;
         }
 
-        main {
+        section {
             padding: 0 10rem 8rem;
         }
 

@@ -1,7 +1,7 @@
 <template>
     <VerticalTitle pageTitle="PORTFOLIO" />
     <TheHeader />
-    <div class="portfolio-container">
+    <section class="portfolio-container">
         <ProjectLayout filename="image-seraph" projectName="Seraph Station" info="September 2019"/>
         <ProjectLayout filename="image-eebox" projectName="Eebox Builing" info="August 2017"/>
         <ProjectLayout filename="image-federal" projectName="FederalII Tower" info="March 2017"/>
@@ -14,7 +14,7 @@
         <ProjectLayout filename="image-sxiv" projectName="SXIV Tower" info="December 2013"/>
         <ProjectLayout filename="image-trinity" projectName="Trinity Bank Tower" info="September 2010"/>
         <ProjectLayout filename="image-paramour" projectName="Project Paramour" info="February 2008"/>
-    </div>
+    </section>
     <TheFooter />
 </template>
 

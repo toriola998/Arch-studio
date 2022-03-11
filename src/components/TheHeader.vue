@@ -1,5 +1,5 @@
 <template>
-    <div class="flex nav-top">
+    <section class="flex nav-top">
         <router-link to="/">
             <img src="./../assets/logo.svg" alt="logo" class="logo"/>
         </router-link>
@@ -29,7 +29,7 @@
                 </li>
             </ul>
         </nav>
-    </div>
+    </section>
 </template>
 
 <script>

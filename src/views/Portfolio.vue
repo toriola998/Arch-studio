@@ -65,8 +65,6 @@ export default {
 @media screen and (min-width: 1200px) {
     .portfolio-container {
         padding: 0rem 10rem 6rem;
-    } 
-    
+    }  
 }
-
 </style>

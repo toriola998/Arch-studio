@@ -1,5 +1,5 @@
 <template>
-    <div class="details-container">
+    <section class="details-container">
         <!--<div class="details-img-wrap">-->
             <!---SHOW IMAGE ONLY ON MOBILE DEVICES-->
             <img :src="require(`./../assets/${pageFileName}/mobile/image-hero.jpg`)" 
@@ -20,7 +20,7 @@
             <h2>{{ subheading }}</h2>
             <p class="description">{{ description }}</p>
         </div>
-    </div>
+    </section>
 </template>
 
 <script>        
@@ -162,6 +162,7 @@ export default {
 
         .large-heading {
             font-size: 9rem;
+            left: -6rem;
         }
     }
 </style>

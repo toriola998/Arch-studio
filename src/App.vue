@@ -114,4 +114,13 @@ export default {
             font-size: 3rem;
         }
     }
+
+    @media screen and (min-width: 1400px) {
+        section,
+        header,
+        footer {
+            max-width: 1320px;
+            margin: auto;
+        }
+    }
 </style>

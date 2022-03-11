@@ -42,7 +42,7 @@
                             </p>
                             <CtaButton to="/portfolio" btnContent="See our portfolio" style="width: 16rem"/>
                         </div>
-                    </div>
+                    </div> 
                 </div>
 
                 <div class="carousel-item">
@@ -140,7 +140,7 @@ export default {
             line-height: 1.9;
             font-size: 1rem;
        }
-       
+
     /****CAROUSEL STYLE STARTS ********** (HAD TO OVERRIDE SOME BOOTSTRAP STYLES) */
         #carouselExampleCaptions{
             display: block;

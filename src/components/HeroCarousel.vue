@@ -1,4 +1,15 @@
 <template>
+    <div class="header">
+    <section class="mobile-hero-section">
+        <div class="home flex">
+            <div>
+                <h1>Project <br> Paramour</h1>
+                <p class="note">Project made for an art museum near Southwest London. 
+                Project Paramour is a statement of bold, modern architecture.</p>
+                <CtaButton to="/portfolio" btnContent="See our portfolio" style="width: 16rem"/>
+            </div>
+        </div>
+    </section>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">01</button>
@@ -62,6 +73,7 @@
 
         </div>
     </div>
+    </div>
 </template>
 
 <script>
@@ -74,43 +86,120 @@ export default {
 </script>
 
 <style scoped>
-    .carousel-caption {
-        left: 40%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        padding: unset;
+    #carouselExampleCaptions{
+        display: none;
+    }
+
+    .home {
+        background-image: url('./../assets/home/mobile/image-hero-paramour.svg');
+        justify-content: center; 
+    }
+
+    h1, 
+    .note {
         color: #fff;
-        text-align: unset;
-        width: 50%;
     }
 
-    .carousel-indicators {
-        bottom: -18px;
-        right: auto;
-        left: auto;
-        margin-left: -4.3rem;
+    h1 {
+        font-size: 2.8rem;
+        line-height: 1.1;
     }
 
-    .carousel-indicators button {
+    .note {
+        font-weight: 400;
+        margin: 1rem 0 3rem;
+        line-height: 1.6;
         font-size: .9rem;
-        font-weight: 700;
-        text-indent: inherit;
-        height: 70px;
-        width: 70px;
-        margin: auto;
-        opacity: inherit;
-        outline: 0;
-        border: 0;
     }
 
-    .carousel-indicators button:hover {
-        background-color: #EEEFF4;
-        color: #7D828F;
+    @media screen and (min-width: 700px) {
+        .home {
+            background-image: url('./../assets/home/tablet/image-hero-paramour.png');
+            height: 700px;
+        }
+
+        .home > div {
+            width: 70% ;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
     }
 
-    .carousel-indicators button.active {
-        background-color: black;
-        color: #fff;
+    @media screen and (min-width: 1000px) {
+         .header {
+            padding: 0 6rem;
+        }
+
+       .mobile-hero-section {   /**HIDE MOBILE HERO ON DESKTOP AND SHOW CAROUSEL */
+           display: none;
+       }
+
+       .note {
+            margin: 1rem 0 1rem;
+       }
+    /****CAROUSEL STYLE STARTS ********** (HAD TO OVERRIDE SOME BOOTSTRAP STYLES) */
+        #carouselExampleCaptions{
+            display: block;
+        }
+
+        .carousel-caption {
+            left: 40%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            padding: unset;
+            color: #fff;
+            text-align: unset;
+            width: 50%;
+        }
+
+        .carousel-indicators {
+            bottom: -18px;
+            right: auto;
+            left: auto;
+            margin-left: -4.3rem;
+        }
+
+        .carousel-indicators button {
+            font-size: .9rem;
+            font-weight: 700;
+            text-indent: inherit;
+            height: 70px;
+            width: 70px;
+            margin: auto;
+            opacity: inherit;
+            outline: 0;
+            border: 0;
+        }
+
+        .carousel-indicators button:hover {
+            background-color: #EEEFF4;
+            color: #7D828F;
+        }
+
+        .carousel-indicators button.active {
+            background-color: black;
+            color: #fff;
+        }
+    /****CAROUSEL STYLE  ENDS ******** (HAD TO OVERRIDE SOME BOOTSTRAP STYLES) */
     }
 
+    @media screen and (min-width: 1200px) {
+        .header {
+            padding: 0 10rem;
+        }
+
+        #home > div {
+            width: 50% ;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+         .note {
+            margin: 1rem 0 3rem;
+       }
+    }
 </style>

@@ -2,19 +2,9 @@
     <VerticalTitle pageTitle="HOME"/>
     <header>
         <TheHeader />
-        <!--<section class="header">
-            <div id="home" class="flex">
-                <div>
-                    <h1>Project <br> Paramour</h1>
-                    <p class="note">Project made for an art museum near Southwest London. 
-                    Project Paramour is a statement of bold, modern architecture.</p>
-                    <CtaButton to="/portfolio" btnContent="See our portfolio" style="width: 16rem"/>
-                </div>
-            </div>
-        </section>-->
-
-        <HeroCarousel class="header"/> 
+        <HeroCarousel/> 
     </header>
+
     <main>
         <section class="welcome">
             <div>
@@ -84,48 +74,12 @@ export default {
 </script>
 
 <style scoped>
-    #home {
-        background-image: url('./../assets/home/mobile/image-hero-paramour.svg');
-        justify-content: center; 
-    }
-
-    #home,
-    .about-us {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 100%;
-        padding: 0 2.5rem;
+   /* .header {
         position: relative;
-        height: 600px; 
-        
-    }
+    }*/
 
-    #home > div,
-    .about-us > div {
-        z-index: 999;
-    }
-
-    .header {
-        position: relative;
-    }
-
-    h1, 
-    .note,
     .cta-link {
         color: #fff;
-    }
-
-    h1 {
-        font-size: 2.8rem;
-        line-height: 1.1;
-    }
-
-    .note {
-        font-weight: 400;
-        margin: 1rem 0 3rem;
-        line-height: 1.6;
-        font-size: .9rem;
     }
 
     .welcome {
@@ -160,11 +114,6 @@ export default {
     }
 
     @media screen and (min-width: 520px) {
-        .header,
-        .about-container{
-            padding: 0 4rem;
-        }
-
         .hide-btn-tab {
             display: none;
         }
@@ -198,22 +147,9 @@ export default {
     }
 
     @media screen and (min-width: 700px) {
-        #home {
-            background-image: url('./../assets/home/tablet/image-hero-paramour.png');
-            height: 700px;
-        }
-
         .about-us {
             background-image: url('./../assets/home/tablet/image-small-team.png');
             height: 500px;
-        }
-
-        #home > div {
-            width: 70% ;
-        }
-
-        h1 {
-            font-size: 3rem;
         }
 
         .project-wrapper { 
@@ -224,21 +160,6 @@ export default {
     }
 
     @media screen and (min-width: 1000px) {
-        .header {
-            padding: 0 6rem;
-        }
-
-        #home {
-            background-image: url('./../assets/home/desktop/image-hero-paramour.jpg');
-            justify-content: initial;
-            padding: 0 8rem;
-            height: 600px;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-        }
-
         .about-us {
             background-image: url('./../assets/home/desktop/image-small-team.jpg'); 
         }
@@ -294,18 +215,6 @@ export default {
     }
 
     @media screen and (min-width: 1200px) {
-        .header {
-            padding: 0 10rem;
-        }
-
-        #home > div {
-            width: 50% ;
-        }
-
-        h1 {
-            font-size: 4rem;
-        }
-
         .welcome {
             padding: 6rem 10rem;
         } 

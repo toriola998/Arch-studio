@@ -75,6 +75,29 @@ export default {
         background-color: rgba(0,0,0, 0.4)
     }
 
+    .home,
+    .about-us {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding: 0 2.5rem;
+        position: relative;
+        height: 600px;  
+    }
+
+    .home > div,
+    .about-us > div {
+        z-index: 999;
+    }
+
+    @media screen and (min-width: 520px) {
+        .header,
+        .about-container{
+            padding: 0 4rem;
+        }
+    }
+
     @media screen and (min-width: 700px) {
     .large-welcome,
     .large-heading {

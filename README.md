@@ -25,6 +25,7 @@ Users can:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Bootstrap (only for the carousel)
 - [VueJs](https://vuejs.org/) - JS library
 
 

@@ -23,6 +23,7 @@ export default {
             left: -3rem;
             display: flex;
             flex-direction: column;
+            width: 160px;
         }
 
         .vertical-line,

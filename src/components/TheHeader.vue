@@ -140,7 +140,7 @@ export default {
 
     @media screen and (min-width: 1200px) {
         .nav-bar {
-            right: 35rem;
+            right: 30rem;
         }
 
         .nav-top {

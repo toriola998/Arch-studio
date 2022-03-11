@@ -1,27 +1,29 @@
 <template>
     <footer>
-        <div class="footer-inner">
-            <div class="logo-bg flex">
-                <router-link to="/">
-                    <img src="./../assets/footer-logo.svg" alt="logo">
-                </router-link>
-            </div>
+        <section class="footer-container">
+            <div class="footer-inner">
+                <div class="logo-bg flex">
+                    <router-link to="/">
+                        <img src="./../assets/footer-logo.svg" alt="logo">
+                    </router-link>
+                </div>
 
-            <nav class="links flex">
-                <ul>
-                    <li>
-                        <router-link to="/portfolio">Portfolio</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/about-us">About us</router-link>
-                    </li>
-                    <li>
-                        <router-link to="/contact">Contact</router-link>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-        <CtaButton to="/portfolio" btnContent="See our portfolio" class="footer-btn"/>
+                <nav class="links flex">
+                    <ul>
+                        <li>
+                            <router-link to="/portfolio">Portfolio</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/about-us">About us</router-link>
+                        </li>
+                        <li>
+                            <router-link to="/contact">Contact</router-link>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <CtaButton to="/portfolio" btnContent="See our portfolio" class="footer-btn"/>
+        </section>
      </footer>
 </template>
 
@@ -35,7 +37,7 @@ export default {
 </script>
 
 <style scoped>
-    footer {
+    .footer-container {
         background-color: #EEEFF4;
         padding-bottom: 3rem;
     }
@@ -71,6 +73,10 @@ export default {
 
     @media screen and (min-width: 670px) {
         footer {
+            position: relative;
+        }
+
+        .footer-container {
             padding-bottom: unset;
             background-color: initial;
         }
@@ -80,7 +86,6 @@ export default {
             width: 85%;
         }
 
-        footer,
        .footer-inner,
         footer ul {
             display: flex;
@@ -97,7 +102,7 @@ export default {
             position: absolute;
             z-index: 99999;
             right: 0;
-            margin-top: 2rem;
+            top: 2rem;
         } 
         
         footer li {
@@ -110,7 +115,7 @@ export default {
     }
 
      @media screen and (min-width: 1000px) {
-        footer {
+        .footer-container {
             padding: 0 6rem;
         }
 
@@ -134,7 +139,7 @@ export default {
      }
 
     @media screen and (min-width: 1200px) {
-        footer {
+        .footer-container {
             padding: 0 10rem;
         }
 

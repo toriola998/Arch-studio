@@ -1,8 +1,8 @@
 <template> 
-    <VerticalTitle pageTitle="HOME"/>
+    <VerticalTitle pageTitle="HOME" />
     <header>
         <TheHeader />
-        <HeroCarousel/> 
+        <HeroCarousel /> 
     </header>
 
     <main>

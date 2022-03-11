@@ -58,7 +58,7 @@ export default {
 
     .nav-bar {
         background-color: #EEEFF4;
-        position: absolute;
+        position: relative;
         right: 0;
         width: 80%;
         top: 5.5rem;
@@ -119,7 +119,7 @@ export default {
         }
 
         .nav-bar li {
-            padding: 0 2rem;
+            padding: 0 1rem;
         }
     }
 
@@ -130,7 +130,12 @@ export default {
 
         .nav-bar {
             height: 10rem;
-            right: 20rem;
+            right: 15rem;
+            top: 1.5rem;
+        }
+
+        .nav-bar li {
+            padding: 0 2rem;
         }
 
         .nav-bar li a:hover {
@@ -139,12 +144,12 @@ export default {
     }
 
     @media screen and (min-width: 1200px) {
-        .nav-bar {
-            right: 30rem;
-        }
-
         .nav-top {
             padding: 0 10rem;
+        }
+
+        .nav-bar {
+            right: 19rem;
         }
     }
 </style>

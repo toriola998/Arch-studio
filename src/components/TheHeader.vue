@@ -58,10 +58,10 @@ export default {
 
     .nav-bar {
         background-color: #EEEFF4;
-        position: relative;
+        position: absolute;
         right: 0;
         width: 80%;
-        top: 5.5rem;
+        top: 6rem;
         z-index: 9999999;
         padding: 3rem 3rem 2rem 3rem;
     }
@@ -73,7 +73,7 @@ export default {
     .overlay  {
         background: rgba(0, 0, 0, 0.8);
         position: fixed;
-        top: 5.5rem;
+        top: 6rem;
         z-index: 9999999;
         min-height: 100%;
         width: 100%;

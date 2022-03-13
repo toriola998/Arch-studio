@@ -53,12 +53,9 @@ export default {
 </script>
 
 <style scoped>
-    section {
-        padding: 0 1.5rem 8rem;
-    }
-
-    .leaders-container{
-        padding-top: 4rem;
+    .about,
+    .leaders-container {
+        padding: 0 1.5rem 5rem;
     }
 
     .leaders-container h2{
@@ -70,8 +67,9 @@ export default {
     }
 
     @media screen and (min-width: 520px) {
-        section {
-            padding: 0 4rem 8rem;
+        .about,
+        .leaders-container {
+            padding: 0 4rem 5rem;
         }
     }
 
@@ -91,11 +89,7 @@ export default {
     @media screen and (min-width: 1000px) {
         .about,
         .leaders-container {
-            padding-top: 8rem;
-        }
-
-        section {
-            padding: 0 6rem 8rem;
+            padding: 8rem 6rem 5rem;
         }
 
         .about {
@@ -124,14 +118,10 @@ export default {
         }
     }
 
-    @media screen and (min-width: 1200px) {
-         .about,
+    @media screen and (min-width: 1200px) { 
+        .about,
         .leaders-container {
-            padding-top: 10rem;
-        }
-
-        section {
-            padding: 0 10rem 8rem;
+            padding: 10rem 8rem 5rem;
         }
 
         .about > div {

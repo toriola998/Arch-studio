@@ -15,7 +15,7 @@
             v-if="!showNav"
             @click="showNav = !showNav"/>
 
-        <div class="overlay" v-if="showNav"></div>
+        <!--<div class="overlay" v-if="showNav"></div>-->
         <nav class="nav-bar" v-show="showNav">
             <ul>
                 <li>

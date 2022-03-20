@@ -4,7 +4,7 @@
             <div class="footer-inner">
                 <div class="logo-bg flex">
                     <router-link to="/">
-                        <img src="./../assets/footer-logo.svg" alt="logo">
+                        <img src="./../assets/footer-logo.svg" alt="Arch Studio - Home">
                     </router-link>
                 </div>
 

@@ -48,8 +48,8 @@
             </div>
            <CtaButton to="/portfolio" btnContent="See all" style="margin-top: 1rem" class="hide-btn-tab"/>
         </section>
-        <TheFooter />
     </main>
+    <TheFooter />
 </template>
 
 <script>

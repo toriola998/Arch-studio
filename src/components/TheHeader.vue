@@ -1,11 +1,11 @@
 <template>
     <section class="flex nav-top">
         <router-link to="/">
-            <img src="./../assets/logo.svg" alt="logo" class="logo"/>
+            <img src="./../assets/logo.svg" alt="Arch Studio - Home" class="logo"/>
         </router-link>
 
         <img src="./../assets/icons/icon-close.svg" 
-            alt="close-icon" 
+            alt="Image of a close menu" 
             v-if="showNav"
             @click="showNav = !showNav"/>
 

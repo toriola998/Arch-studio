@@ -1,20 +1,22 @@
 <template>
     <VerticalTitle pageTitle="PORTFOLIO" />
     <TheHeader />
-    <section class="portfolio-container">
-        <ProjectLayout filename="image-seraph" projectName="Seraph Station" info="September 2019"/>
-        <ProjectLayout filename="image-eebox" projectName="Eebox Builing" info="August 2017"/>
-        <ProjectLayout filename="image-federal" projectName="FederalII Tower" info="March 2017"/>
-        <ProjectLayout filename="image-del-sol" projectName="Project del sol" info="January 2019"/>
-        <ProjectLayout filename="image-prototype" projectName="Le prototype" info="October 2015"/>
-        <ProjectLayout filename="image-228b" projectName="228B Tower" info="April 2015"/>
-        <ProjectLayout filename="image-edelweiss" projectName="Grand Edelweiss Hotel" info="December 2013"/>
-        <ProjectLayout filename="image-netcry" projectName="Netcry Tower" info="August 2012"/>
-        <ProjectLayout filename="image-hypers" projectName="Hypers" info="January 2012"/>
-        <ProjectLayout filename="image-sxiv" projectName="SXIV Tower" info="December 2013"/>
-        <ProjectLayout filename="image-trinity" projectName="Trinity Bank Tower" info="September 2010"/>
-        <ProjectLayout filename="image-paramour" projectName="Project Paramour" info="February 2008"/>
-    </section>
+    <main>
+        <section class="portfolio-container">
+            <ProjectLayout filename="image-seraph" projectName="Seraph Station" info="September 2019"/>
+            <ProjectLayout filename="image-eebox" projectName="Eebox Builing" info="August 2017"/>
+            <ProjectLayout filename="image-federal" projectName="FederalII Tower" info="March 2017"/>
+            <ProjectLayout filename="image-del-sol" projectName="Project del sol" info="January 2019"/>
+            <ProjectLayout filename="image-prototype" projectName="Le prototype" info="October 2015"/>
+            <ProjectLayout filename="image-228b" projectName="228B Tower" info="April 2015"/>
+            <ProjectLayout filename="image-edelweiss" projectName="Grand Edelweiss Hotel" info="December 2013"/>
+            <ProjectLayout filename="image-netcry" projectName="Netcry Tower" info="August 2012"/>
+            <ProjectLayout filename="image-hypers" projectName="Hypers" info="January 2012"/>
+            <ProjectLayout filename="image-sxiv" projectName="SXIV Tower" info="December 2013"/>
+            <ProjectLayout filename="image-trinity" projectName="Trinity Bank Tower" info="September 2010"/>
+            <ProjectLayout filename="image-paramour" projectName="Project Paramour" info="February 2008"/>
+        </section>
+    </main>
     <TheFooter />
 </template>
 

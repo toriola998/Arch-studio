@@ -1,36 +1,41 @@
 <template>
     <VerticalTitle pageTitle="ABOUT"/>
     <TheHeader/>
-    <Details pageFileName="about" 
+    <header>
+         <Details pageFileName="about" 
         largeHeading="About"
         subheading="Your team of professionals"
         description="Our small team of world-class professionals will work with
         you every step of the way. Strong relationships are at the core of everything we do.
         This extends to the relationship our projects have with their surroundings."
         />
-    <section class="about">
-        <div>
-            <div class="line"></div>
-            <h2>Our<br> Heritage</h2>
-            <p class="description">Founded in 2007, we started as a trio of architects. Our complimentary skills and 
-            relentless attention to detail turned Arch into one of the most sought after
-            boutique firms in the country.</p>
-            <p class="description">Speciliazing in Urban Design allowed us to focus on creating exceptional structures
-            that live in harmony with their surroundings. We consider every detail from every
-            surrounding element to inform our designs.</p>
-            <p class="description">Our small team of world-class professionals provides input on every project.</p>
-        </div>
-        <img src="./../assets/about/desktop/image-heritage.jpg" alt="" class="img-heritage"/>
-    </section>
-    <section class="leaders-container">
-        <h2>The<br> Leaders</h2>
-        <div>
-            <LeaderLayout avatarName="avatar-jake" personName="Jake Richards" personRole="Chief Architect"/>
-            <LeaderLayout avatarName="avatar-thompson" personName="Thompson Smith" personRole="Head of Finance"/>
-            <LeaderLayout avatarName="avatar-jackson" personName="Jackson Rourke" personRole="Lead designer"/>
-            <LeaderLayout avatarName="avatar-maria" personName="Maria Simpson" personRole="Senior Architect"/>
-        </div>
-    </section>
+    </header>
+    
+    <main>
+         <section class="about">
+            <div>
+                <div class="line"></div>
+                <h2>Our<br> Heritage</h2>
+                <p class="description">Founded in 2007, we started as a trio of architects. Our complimentary skills and 
+                relentless attention to detail turned Arch into one of the most sought after
+                boutique firms in the country.</p>
+                <p class="description">Speciliazing in Urban Design allowed us to focus on creating exceptional structures
+                that live in harmony with their surroundings. We consider every detail from every
+                surrounding element to inform our designs.</p>
+                <p class="description">Our small team of world-class professionals provides input on every project.</p>
+            </div>
+            <img src="./../assets/about/desktop/image-heritage.jpg" alt="" class="img-heritage"/>
+        </section>
+        <section class="leaders-container">
+            <h2>The<br> Leaders</h2>
+            <div>
+                <LeaderLayout avatarName="avatar-jake" personName="Jake Richards" personRole="Chief Architect"/>
+                <LeaderLayout avatarName="avatar-thompson" personName="Thompson Smith" personRole="Head of Finance"/>
+                <LeaderLayout avatarName="avatar-jackson" personName="Jackson Rourke" personRole="Lead designer"/>
+                <LeaderLayout avatarName="avatar-maria" personName="Maria Simpson" personRole="Senior Architect"/>
+            </div>
+        </section>
+    </main>
     <TheFooter />
 </template>
 

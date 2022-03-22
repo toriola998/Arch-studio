@@ -4,17 +4,14 @@
             <img src="./../assets/logo.svg" alt="Arch Studio - Home" class="logo"/>
         </router-link>
 
-        <img src="./../assets/icons/icon-close.svg" 
-            alt="Image of a close menu" 
-            v-if="showNav"
-            @click="showNav = !showNav"/>
-
-        <img src="./../assets/icons/icon-hamburger.svg" 
-            alt="hamburger-menu" 
-            class="menu"
-            v-if="!showNav"
-            @click="showNav = !showNav"/>
-
+        <button  v-if="showNav"  @click="showNav = !showNav">
+            <img src="./../assets/icons/icon-close.svg" alt="Image of a close menu" />
+        </button>
+        
+        <button v-if="!showNav"  @click="showNav = !showNav">
+            <img src="./../assets/icons/icon-hamburger.svg" alt="Image of an hamburger menu" class="menu"/>
+        </button>
+       
         <!--<div class="overlay" v-if="showNav"></div>-->
         <nav class="nav-bar" v-show="showNav">
             <ul>
@@ -48,6 +45,16 @@ export default {
     menu {
         height: auto;
         width: auto;
+    }
+
+    button {
+        background-color: transparent;
+        border: 0;
+    }
+
+    button:focus {
+        padding: 2rem;
+        border: 2px solid #000;
     }
 
     .nav-top{

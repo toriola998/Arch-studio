@@ -1,7 +1,7 @@
 <template>
      <router-link to="" class="cta-link flex">
         <span class="cta"> {{btnContent}} </span>
-        <img alt="visit-arrow" src="./../assets/icons/icon-arrow-white.svg" class="visit-arrow"/>
+        <img alt="" src="./../assets/icons/icon-arrow-white.svg" class="visit-arrow"/>
     </router-link>
 </template>
 

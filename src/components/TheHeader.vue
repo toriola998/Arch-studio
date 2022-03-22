@@ -1,15 +1,26 @@
 <template>
     <section class="flex nav-top">
         <router-link to="/">
-            <img src="./../assets/logo.svg" alt="Arch Studio - Home" class="logo"/>
+            <img src="./../assets/logo.svg" 
+                alt="Arch Studio - Home" 
+                class="logo" 
+                width="97" 
+                height="40"/>
         </router-link>
 
         <button  v-if="showNav"  @click="showNav = !showNav">
-            <img src="./../assets/icons/icon-close.svg" alt="Image of a close menu" />
+            <img src="./../assets/icons/icon-close.svg" 
+                alt="Image of a close menu"
+                width="24"
+                height="24" />
         </button>
         
         <button v-if="!showNav"  @click="showNav = !showNav">
-            <img src="./../assets/icons/icon-hamburger.svg" alt="Image of an hamburger menu" class="menu"/>
+            <img src="./../assets/icons/icon-hamburger.svg"
+                alt="Image of an hamburger menu"
+                class="menu"
+                width="24"
+                height="17" />
         </button>
        
         <!--<div class="overlay" v-if="showNav"></div>-->
@@ -41,12 +52,6 @@ export default {
 </script>
 
 <style scoped>
-    .logo,
-    menu {
-        height: auto;
-        width: auto;
-    }
-
     button {
         background-color: transparent;
         border: 0;

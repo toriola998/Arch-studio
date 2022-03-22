@@ -24,11 +24,6 @@ export default {
         text-decoration: none;
     }
 
-    img {
-        height: auto;
-        width: auto;
-    }
-
     li a{
         color: #1B1D23;
         font-weight: 600;

@@ -20,7 +20,11 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./../assets/home/desktop/image-hero-paramour.jpg" class="d-block w-100" alt="Image of the Paramour Project">
+                    <img src="./../assets/home/desktop/image-hero-paramour.jpg" 
+                        class="d-block w-100"
+                        width="100"
+                        height="100" 
+                        alt="Image of the Paramour Project">
                     <div class="carousel-caption d-none d-md-block">
                         <div>
                             <h1>Project <br> Paramour</h1>
@@ -32,7 +36,11 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img src="./../assets/home/desktop/image-hero-seraph.jpg" class="d-block w-100" alt="Image of the Seraph Station Project">
+                    <img src="./../assets/home/desktop/image-hero-seraph.jpg" 
+                        class="d-block w-100" 
+                        alt="Image of the Seraph Station Project"
+                        width="100"
+                        height="100" >
                     <div class="carousel-caption d-none d-md-block">
                         <div>
                             <h1>Seraph <br> Station</h1>
@@ -46,7 +54,11 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img src="./../assets/home/desktop/image-hero-federal.jpg" class="d-block w-100" alt="Image of the Federal II Tower Project">
+                    <img src="./../assets/home/desktop/image-hero-federal.jpg" 
+                         class="d-block w-100" 
+                         alt="Image of the Federal II Tower Project"
+                         width="100"
+                         height="100" >
                     <div class="carousel-caption d-none d-md-block">
                         <div>
                             <h1>Federal II <br> Tower</h1>
@@ -58,7 +70,11 @@
                 </div>
 
                 <div class="carousel-item">
-                    <img src="./../assets/home/desktop/image-hero-trinity.jpg" class="d-block w-100" alt="Image of the Trinity Bank Tower">
+                    <img src="./../assets/home/desktop/image-hero-trinity.jpg" 
+                        class="d-block w-100" 
+                        alt="Image of the Trinity Bank Tower"
+                        width="100"
+                        height="100" >
                     <div class="carousel-caption d-none d-md-block">
                         <div>
                             <h1>Trinity Bank<br> Tower</h1>

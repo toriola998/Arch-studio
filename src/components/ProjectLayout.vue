@@ -7,7 +7,9 @@
                     :srcset="require(`@/assets/portfolio/tablet/${filename}.jpg`)">
             <img :src="require(`@/assets/portfolio/mobile/${filename}.jpg`)"
                     :alt="projectAltText"
-                    class="project">
+                    class="project"
+                    width="100"
+                    height="100">
         </picture> 
         <div>
             <h3>{{ projectName }}</h3>

@@ -1,9 +1,9 @@
 <template>
     <div class="project-container">
         <picture>
-            <source media="(min-width: 1000px)" 
-                    :src="require(`@/assets/portfolio/desktop/${filename}.jpg`)">
             <source media="(min-width: 700px)" 
+                    :srcset="require(`@/assets/portfolio/desktop/${filename}.jpg`)">
+            <source media="(min-width: 520px)" 
                     :srcset="require(`@/assets/portfolio/tablet/${filename}.jpg`)">
             <img :src="require(`@/assets/portfolio/mobile/${filename}.jpg`)"
                     :alt="projectAltText"

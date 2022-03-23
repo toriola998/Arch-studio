@@ -24,10 +24,10 @@
 
         <section class="office-map">
             <picture>
-                <source media="(min-width: 1000px)" 
-                    src="./../assets/contact/desktop/image-map.png">    
                 <source media="(min-width: 700px)" 
-                       src="./../assets/contact/tablet/image-map.png">
+                        srcset="./../assets/contact/desktop/image-map.png">    
+                <source media="(min-width: 520px)" 
+                       srcset="./../assets/contact/tablet/image-map.png">
                 <img src="./../assets/contact/mobile/image-map.png"
                      alt="Diagram of the map to our office"
                      class="map">

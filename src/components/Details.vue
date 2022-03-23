@@ -1,18 +1,28 @@
 <template>
     <section class="details-container">
-        <!--<div class="details-img-wrap">-->
-            <!---SHOW IMAGE ONLY ON MOBILE DEVICES-->
+        <!--<div class="details-img-wrap">-
+            ---SHOW IMAGE ONLY ON MOBILE DEVICES-
             <img :src="require(`./../assets/${pageFileName}/mobile/image-hero.jpg`)" 
                 alt="" class="details-img details-mobile"/>
 
-            <!---SHOW IMAGE ONLY ON TABLET DEVICES-->
+            ---SHOW IMAGE ONLY ON TABLET DEVICES-
             <img :src="require(`./../assets/${pageFileName}/tablet/image-hero.jpg`)" 
                 alt="" class="details-img details-tablet"/>
 
-            <!---SHOW IMAGE ONLY ON DESKTOP DEVICES-->
+            !#---SHOW IMAGE ONLY ON DESKTOP DEVICES-
             <img :src="require(`./../assets/${pageFileName}/desktop/image-hero.jpg`)"
             alt="" class="details-img details-desktop"/>
-        <!--</div>--> 
+        </div>--> 
+
+        <picture>
+            <source media="(min-width: 1000px)" 
+                :srcset="require(`./../assets/${pageFileName}/desktop/image-hero.jpg`)">    
+            <source media="(min-width: 700px)" 
+                    :srcset="require(`./../assets/${pageFileName}/tablet/image-hero.jpg`)">
+            <img :src="require(`./../assets/${pageFileName}/mobile/image-hero.jpg`)"  
+                    alt=""
+                    class="details-img">
+        </picture>
         <div class="white-div"></div>
         <div class="page-details">
             <h2 class="large-heading">{{ largeHeading}}</h2>
@@ -50,9 +60,7 @@ export default {
     }
 
     .line,
-    .large-heading,
-    .details-tablet,
-    .details-desktop {
+    .large-heading {
         display: none;
     }
 
@@ -61,7 +69,7 @@ export default {
             display: none;
         }
 
-        .details-mobile {
+        .details-img {
             height: 350px;
             object-fit: cover;
         }
@@ -85,11 +93,10 @@ export default {
             display: block;
         }
 
-        .details-tablet {
+        .details-img {
             height: 700px;
         }
 
-        .details-mobile,
         .white-div {
             display: none;
         }
@@ -117,7 +124,7 @@ export default {
     }
 
     @media screen and (min-width: 1000px) {
-        .details-desktop  {
+        .details-img  {
             display: block;
             width: 55%;
             height: 700px;
@@ -126,11 +133,6 @@ export default {
 
         .details-container {
             padding: 0 6rem;
-        }
-
-        .details-mobile,
-        .details-tablet  {
-            display: none;
         }
 
         .page-details {

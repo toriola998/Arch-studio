@@ -22,8 +22,6 @@
                 <div class="carousel-item active">
                     <img src="./../assets/home/desktop/image-hero-paramour.jpg" 
                         class="d-block w-100"
-                        width="100"
-                        height="100" 
                         alt="Image of the Paramour Project">
                     <div class="carousel-caption d-none d-md-block">
                         <div>

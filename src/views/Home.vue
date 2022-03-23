@@ -39,12 +39,21 @@
             </div>
             
             <div class="project-wrapper">
-                <ProjectLayout filename="image-del-sol" projectName="Project del sol" 
-                        info="View All Projects" projectNumber="1"/>
-                <ProjectLayout filename="image-228b" projectName="228B Tower" 
-                        info="View All Projects" projectNumber="2"/>
-                <ProjectLayout filename="image-prototype" projectName="Le Prototype" 
-                        info="View All Projects" projectNumber="3"/>
+                <ProjectLayout filename="image-del-sol" 
+                               projectName="Project del sol"
+                               projectAltText="Project del sol" 
+                               info="View All Projects" 
+                               projectNumber="1"/>
+                <ProjectLayout filename="image-228b" 
+                                projectName="228B Tower"
+                                projectAltText="228B Tower" 
+                                info="View All Projects" 
+                                projectNumber="2"/>
+                <ProjectLayout filename="image-prototype" 
+                                projectName="Le Prototype"
+                                projectAltText="Le Prototype" 
+                                info="View All Projects" 
+                                projectNumber="3"/>
             </div>
            <CtaButton to="/portfolio" btnContent="See all" style="margin-top: 1rem" class="hide-btn-tab"/>
         </section>

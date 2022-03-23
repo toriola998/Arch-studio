@@ -23,9 +23,15 @@
         </section>
 
         <section class="office-map">
-            <img src="./../assets/contact/mobile/image-map.png" alt="map-to-our office" class="map mobile-map"/>
-            <img src="./../assets/contact/tablet/image-map.png" alt="map-to-our office" class="map tablet-map"/>
-            <img src="./../assets/contact/desktop/image-map.png" alt="map-to-our office" class="map desktop-map"/>
+            <picture>
+                <source media="(min-width: 1000px)" 
+                    src="./../assets/contact/desktop/image-map.png">    
+                <source media="(min-width: 700px)" 
+                       src="./../assets/contact/tablet/image-map.png">
+                <img src="./../assets/contact/mobile/image-map.png"
+                     alt="Diagram of the map to our office"
+                     class="map">
+            </picture>
         </section>
 
         <section class="contact-form">
@@ -48,7 +54,7 @@
                 </div>
                 
                 <button type="submit" class="flex">
-                    <img src="./../assets/icons/icon-arrow-white.svg" alt="visit-arrow" style="height: 2rem"/>
+                    <img src="./../assets/icons/icon-arrow-white.svg" alt="Submit your form" style="height: 2rem"/>
                 </button> 
             </form>
         </section>
@@ -173,11 +179,6 @@ export default {
         justify-content: center;
     }
 
-    .tablet-map,
-    .desktop-map {
-        display: none;
-    }
-
     .error {
         color: #DF5656;
         font-size: .7rem;
@@ -211,30 +212,12 @@ export default {
         .contact-form h2 {
             margin: 2rem 3rem 0 0;
         }
-
-        .tablet-map {
-            display: none;
-        }
-
-        .mobile-map,
-        .desktop-map {
-            display: none;
-        }
     }
 
     @media screen and (min-width: 1000px) {
         .flex-contact {
             display: grid;
             grid-template-columns: auto auto auto;
-        }
-
-        .desktop-map {
-            display: block;
-        }
-
-        .tablet-map,
-        .mobile-map {
-            display: none;
         }
 
         .contact{

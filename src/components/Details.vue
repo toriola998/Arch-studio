@@ -1,19 +1,5 @@
 <template>
     <section class="details-container">
-        <!--<div class="details-img-wrap">-
-            ---SHOW IMAGE ONLY ON MOBILE DEVICES-
-            <img :src="require(`./../assets/${pageFileName}/mobile/image-hero.jpg`)" 
-                alt="" class="details-img details-mobile"/>
-
-            ---SHOW IMAGE ONLY ON TABLET DEVICES-
-            <img :src="require(`./../assets/${pageFileName}/tablet/image-hero.jpg`)" 
-                alt="" class="details-img details-tablet"/>
-
-            !#---SHOW IMAGE ONLY ON DESKTOP DEVICES-
-            <img :src="require(`./../assets/${pageFileName}/desktop/image-hero.jpg`)"
-            alt="" class="details-img details-desktop"/>
-        </div>--> 
-
         <picture>
             <source media="(min-width: 1000px)" 
                 :srcset="require(`./../assets/${pageFileName}/desktop/image-hero.jpg`)">    

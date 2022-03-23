@@ -1,16 +1,14 @@
 <template>
     <div class="project-container">
-        <img :src="require(`@/assets/portfolio/mobile/${filename}.jpg`)"
-        alt="project-photo" 
-        class="project mobile-projects" />
-
-        <img :src="require(`@/assets/portfolio/tablet/${filename}.jpg`)"
-        alt="project-photo" 
-        class="project tab-projects" />
-
-        <img :src="require(`@/assets/portfolio/desktop/${filename}.jpg`)"
-        alt="project-photo" 
-        class="project desktop-projects" />    
+        <picture>
+            <source media="(min-width: 1000px)" 
+                    :src="require(`@/assets/portfolio/desktop/${filename}.jpg`)">
+            <source media="(min-width: 700px)" 
+                    :srcset="require(`@/assets/portfolio/tablet/${filename}.jpg`)">
+            <img :src="require(`@/assets/portfolio/mobile/${filename}.jpg`)"
+                    :alt="projectAltText"
+                    class="project">
+        </picture> 
         <div>
             <h3>{{ projectName }}</h3>
             <router-link to="/portfolio" class="project-link">{{ info }}</router-link>
@@ -22,7 +20,7 @@
 <script>
 export default {
     name: 'Project',
-    props: ['filename', 'projectName', 'info', 'projectNumber']
+    props: ['projectAltText','filename', 'projectName', 'info', 'projectNumber']
 }
 </script>
 

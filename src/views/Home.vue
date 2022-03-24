@@ -1,7 +1,7 @@
 <template> 
     <VerticalTitle pageTitle="HOME" />
+    <TheHeader />
     <header>
-        <TheHeader />
         <HeroCarousel /> 
     </header>
 

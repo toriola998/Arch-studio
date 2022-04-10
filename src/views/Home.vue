@@ -1,15 +1,15 @@
 <template> 
     <VerticalTitle pageTitle="HOME" />
     <TheHeader />
-    <header>
+    <header role="banner">
         <HeroCarousel /> 
     </header>
 
-    <main>
-        <section class="welcome">
+    <main role="main">
+        <section class="welcome" aria-labelledby="about-us">
             <div>
                 <div class="line"></div>
-                <h2 class="large-welcome">Welcome</h2>
+                <h2 class="large-welcome" id="about-us">Welcome</h2>
                 <h2>Welcome to<br> Arch Studio</h2>
                 <p class="description"> We have a unique network and skillset to help bring your projects to life. Our small 
                 team of highly skilled individuals combined with our large network put us in a strong 

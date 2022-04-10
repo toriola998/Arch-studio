@@ -1,7 +1,7 @@
 <template>
     <VerticalTitle pageTitle="PORTFOLIO" />
     <TheHeader />
-    <main>
+    <main role="main">
         <section class="portfolio-container">
             <ProjectLayout projectAltText="Seraph Station" filename="image-seraph" projectName="Seraph Station" info="September 2019"/>
             <ProjectLayout projectAltText="Eebox Building"  filename="image-eebox" projectName="Eebox Builing" info="August 2017"/>

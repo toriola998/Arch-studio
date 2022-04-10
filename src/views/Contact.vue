@@ -1,7 +1,7 @@
 <template>
     <VerticalTitle pageTitle="CONTACT" />
     <TheHeader />
-    <header>
+    <header role="banner">
         <Details pageFileName="contact" 
             largeHeading="Contact"
             subheading="Tell us about your project"
@@ -10,11 +10,11 @@
             If you find yourself nearby, come say hello!"
             />
     </header>
-    <main>
-        <section class="contact">
+    <main role="main">
+        <section class="contact" aria-labelledby="contact-details">
             <div class="line"></div>
             <div class="flex-contact">
-                <h2>Contact <br> Details</h2>
+                <h2 id="contact-details">Contact <br> Details</h2>
                 <ContactInfo headingTitle="Main Office" mail="Mail: archone@mail.com"
                             address="Address: 1892  Chenoweth Drive TN" phone="Phone: 123-456-3451" />
                 <ContactInfo headingTitle="Office II" mail="Mail: archtwo@mail.com"
@@ -22,7 +22,7 @@
             </div>
         </section>
 
-        <section class="office-map">
+        <section class="office-map" aria-label="Map leading to our office">
             <picture>
                 <source media="(min-width: 700px)" 
                         srcset="./../assets/contact/desktop/image-map.png">    
@@ -34,8 +34,8 @@
             </picture>
         </section>
 
-        <section class="contact-form">
-            <h2>Connect <br> with us</h2>
+        <section class="contact-form" aria-labelledby="connect-with-us">
+            <h2 id="connect-with-us">Connect <br> with us</h2>
             <form @submit.prevent="submitForm()">
                 <div class="flex input-wrap">
                     <input type="text" placeholder="Name" v-model="name"/>

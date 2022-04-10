@@ -1,8 +1,8 @@
 <template>
     <VerticalTitle pageTitle="ABOUT"/>
     <TheHeader/>
-    <header>
-         <Details pageFileName="about" 
+    <header role="banner">
+        <Details pageFileName="about" 
         largeHeading="About"
         subheading="Your team of professionals"
         description="Our small team of world-class professionals will work with
@@ -11,11 +11,11 @@
         />
     </header>
     
-    <main>
-         <section class="about">
+    <main role="main">
+         <section class="about" aria-labelledby="our-heritage">
             <div>
                 <div class="line"></div>
-                <h2>Our<br> Heritage</h2>
+                <h2 id="our-heritage">Our<br> Heritage</h2>
                 <p class="description">Founded in 2007, we started as a trio of architects. Our complimentary skills and 
                 relentless attention to detail turned Arch into one of the most sought after
                 boutique firms in the country.</p>
@@ -26,8 +26,8 @@
             </div>
             <img src="./../assets/about/desktop/image-heritage.jpg" alt="" class="img-heritage"/>
         </section>
-        <section class="leaders-container">
-            <h2>The<br> Leaders</h2>
+        <section class="leaders-container" aria-labelledby="the-leaders">
+            <h2 id="the-leaders">The<br> Leaders</h2>
             <div>
                 <LeaderLayout altText ="Picture of Jake Richards" avatarName="avatar-jake" personName="Jake Richards" personRole="Chief Architect"/>
                 <LeaderLayout altText ="Picture of Thompson Smith" avatarName="avatar-thompson" personName="Thompson Smith" personRole="Head of Finance"/>

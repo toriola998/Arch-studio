@@ -1,11 +1,11 @@
 <template> 
     <VerticalTitle pageTitle="HOME" />
     <TheHeader />
-    <header role="banner">
+    <header>
         <HeroCarousel /> 
     </header>
 
-    <main role="main">
+    <main>
         <section class="welcome" aria-labelledby="about-us">
             <div>
                 <div class="line"></div>

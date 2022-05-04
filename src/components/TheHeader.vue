@@ -24,7 +24,7 @@
         </button>
        
         <!--<div class="overlay" v-if="showNav"></div>-->
-        <nav class="nav-bar" v-show="showNav" role="navigation">
+        <nav class="nav-bar" v-show="showNav">
             <ul>
                 <li>
                     <router-link to="/portfolio">Portfolio</router-link>

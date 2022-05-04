@@ -1,7 +1,7 @@
 <template>
     <VerticalTitle pageTitle="ABOUT"/>
     <TheHeader/>
-    <header role="banner">
+    <header>
         <Details pageFileName="about" 
         largeHeading="About"
         subheading="Your team of professionals"
@@ -11,7 +11,7 @@
         />
     </header>
     
-    <main role="main">
+    <main>
          <section class="about" aria-labelledby="our-heritage">
             <div>
                 <div class="line"></div>

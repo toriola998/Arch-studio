@@ -1,7 +1,7 @@
 <template>
     <VerticalTitle pageTitle="CONTACT" />
     <TheHeader />
-    <header role="banner">
+    <header>
         <Details pageFileName="contact" 
             largeHeading="Contact"
             subheading="Tell us about your project"
@@ -10,7 +10,7 @@
             If you find yourself nearby, come say hello!"
             />
     </header>
-    <main role="main">
+    <main>
         <section class="contact" aria-labelledby="contact-details">
             <div class="line"></div>
             <div class="flex-contact">

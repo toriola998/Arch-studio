@@ -1,5 +1,5 @@
 <template>
-    <footer role="content-info">
+    <footer>
         <section class="footer-container">
             <div class="footer-inner">
                 <div class="logo-bg flex">

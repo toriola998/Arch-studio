@@ -2,23 +2,32 @@
     <VerticalTitle pageTitle="CONTACT" />
     <TheHeader />
     <header>
-        <Details pageFileName="contact" 
+        <Details 
+            pageFileName="contact" 
             largeHeading="Contact"
             subheading="Tell us about your project"
             description="We'd love to hear more about your project. Please, leave a message 
-            below or give us a call. We have two offices, one in Texas and one in Tennessee.
-            If you find yourself nearby, come say hello!"
-            />
+                below or give us a call. We have two offices, one in Texas and one in Tennessee.
+                If you find yourself nearby, come say hello!"
+        />
     </header>
     <main>
         <section class="contact" aria-labelledby="contact-details">
             <div class="line"></div>
             <div class="flex-contact">
                 <h2 id="contact-details">Contact <br> Details</h2>
-                <ContactInfo headingTitle="Main Office" mail="Mail: archone@mail.com"
-                            address="Address: 1892  Chenoweth Drive TN" phone="Phone: 123-456-3451" />
-                <ContactInfo headingTitle="Office II" mail="Mail: archtwo@mail.com"
-                            address="Address: 3399  Wines Lane TX" phone="Phone: 832-123-4321" />
+                <ContactInfo 
+                    headingTitle="Main Office" 
+                    mail="Mail: archone@mail.com"
+                    address="Address: 1892  Chenoweth Drive TN" 
+                    phone="Phone: 123-456-3451" 
+                />
+                <ContactInfo 
+                    headingTitle="Office II" 
+                    mail="Mail: archtwo@mail.com"
+                    address="Address: 3399  Wines Lane TX" 
+                    phone="Phone: 832-123-4321" 
+                />
             </div>
         </section>
 

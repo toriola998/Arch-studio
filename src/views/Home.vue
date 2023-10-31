@@ -55,12 +55,12 @@
 </template>
 
 <script>
-import HeroCarousel from '../components/HeroCarousel.vue'
-import TheHeader from '../components/TheHeader.vue'
-import VerticalTitle from '../components/VerticalTitle.vue'
-import ProjectLayout from '../components/ProjectLayout.vue'
-import CtaButton from '../components/CtaButton.vue'
-import TheFooter from '../components/TheFooter.vue'
+import HeroCarousel from '@/components/HeroCarousel'
+import TheHeader from '@/components/TheHeader.vue'
+import VerticalTitle from '@/components/VerticalTitle.vue'
+import ProjectLayout from '@/components/ProjectLayout.vue'
+import CtaButton from '@/components/CtaButton.vue'
+import TheFooter from '@/components/TheFooter.vue'
 
 export default {
     name: 'Home',

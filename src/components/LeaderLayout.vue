@@ -1,9 +1,10 @@
 <template>
     <div class="the-leaders">
-        <img :src="require(`@/assets/about/desktop/${avatarName}.jpg`)" :alt="altText" class="leader-img"/>
-        <h3>{{ personName}}</h3>
+        <img :src="require(`@/assets/about/desktop/${avatarName}.jpg`)" :alt="`Picture of ${personName}`"
+            class="leader-img" />
+        <h3>{{ personName }}</h3>
         <p class="role"> {{ personRole }}</p>
-        <img src="./../assets/icons/icon-linkedin.svg" alt="linkedin icon" style="margin-right: 1.5rem;"/>
+        <img src="./../assets/icons/icon-linkedin.svg" alt="linkedin icon" style="margin-right: 1.5rem;" />
         <img src="./../assets/icons/icon-twitter.svg" alt="twitter icon" />
     </div>
 </template>
@@ -11,26 +12,26 @@
 <script>
 export default {
     name: 'LeaderLayout',
-    props: ['altText', 'avatarName', 'personName', 'personRole']
+    props: ['avatarName', 'personName', 'personRole']
 }
 </script>
 
 <style scoped>
-    .the-leaders {
-        margin-bottom: 2.5rem;
-    }
-    
-    .leader-img {
-        width: 100%;
-        height: auto;
-    }
+.the-leaders {
+    margin-bottom: 2.5rem;
+}
 
-    h3 {
-        margin: 1rem 0 .7rem;
-    }
+.leader-img {
+    width: 100%;
+    height: auto;
+}
 
-    .role {
-        font-weight: 500;
-        margin-bottom: .5rem;
-    }
+h3 {
+    margin: 1rem 0 .7rem;
+}
+
+.role {
+    font-weight: 500;
+    margin-bottom: .5rem;
+}
 </style>

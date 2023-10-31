@@ -6,7 +6,7 @@
             <source media="(min-width: 520px)" 
                     :srcset="require(`@/assets/portfolio/tablet/${filename}.jpg`)">
             <img :src="require(`@/assets/portfolio/mobile/${filename}.jpg`)"
-                    :alt="projectAltText"
+                    :alt="projectName"
                     class="project"
                     width="100"
                     height="100">
@@ -22,7 +22,7 @@
 <script>
 export default {
     name: 'Project',
-    props: ['projectAltText','filename', 'projectName', 'info', 'projectNumber']
+    props: ['filename', 'projectName', 'info', 'projectNumber']
 }
 </script>
 
